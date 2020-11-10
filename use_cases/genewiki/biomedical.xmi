@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML"
+ xmi:id="khbm28gs" name="ShExGeneratedXMI">
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28h0" name=":active_site">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28hm" name="wdt:P31" visibility="public" type="khbm28hl" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28hn" name="wdt:P361" visibility="public" type="khbm28hd" association="khbm28ho" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28hp" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28hq" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28hs" name="Extra" visibility="public" type="khbm28hr" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28ho" memberEnd="khbm28hn khbm28ht">
+	<ownedEnd xmi:id="khbm28ht" visibility="public" type="khbm28h0" association="khbm28ho"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28h1" name=":anatomical_structure">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28hv" name="wdt:P31" visibility="public" type="khbm28hu" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28hw" name="wdt:P361" visibility="public" type="khbm28h1" association="khbm28hx" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28hy" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28hz" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28i0" name="wdt:P527" visibility="public" type="khbm28h1" association="khbm28i1" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28i2" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28i3" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28i5" name="Extra" visibility="public" type="khbm28i4" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28hx" memberEnd="khbm28hw khbm28i6">
+	<ownedEnd xmi:id="khbm28i6" visibility="public" type="khbm28h1" association="khbm28hx"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28i1" memberEnd="khbm28i0 khbm28i7">
+	<ownedEnd xmi:id="khbm28i7" visibility="public" type="khbm28h1" association="khbm28i1"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28h2" name=":binding_site">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28i9" name="wdt:P31" visibility="public" type="khbm28i8" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28ia" name="wdt:P361" visibility="public" type="khbm28hd" association="khbm28ib" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28ic" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28id" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28if" name="Extra" visibility="public" type="khbm28ie" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28ib" memberEnd="khbm28ia khbm28ig">
+	<ownedEnd xmi:id="khbm28ig" visibility="public" type="khbm28h2" association="khbm28ib"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28h3" name=":biological_pathway">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28ii" name="wdt:P31" visibility="public" type="khbm28ih" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28ij" name="wdt:P361" visibility="public" type="khbm28h3" association="khbm28ik" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28il" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28im" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28in" name="wdt:P361" visibility="public" type="khbm28h7" association="khbm28io" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28ip" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28iq" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28ir" name="wdt:P527" visibility="public" type="khbm28h3" association="khbm28is" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28it" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28iu" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28iv" name="wdt:P527" visibility="public" type="khbm28h7" association="khbm28iw" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28ix" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28iy" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28j0" name="Extra" visibility="public" type="khbm28iz" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28ik" memberEnd="khbm28ij khbm28j1">
+	<ownedEnd xmi:id="khbm28j1" visibility="public" type="khbm28h3" association="khbm28ik"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28io" memberEnd="khbm28in khbm28j2">
+	<ownedEnd xmi:id="khbm28j2" visibility="public" type="khbm28h3" association="khbm28io"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28is" memberEnd="khbm28ir khbm28j3">
+	<ownedEnd xmi:id="khbm28j3" visibility="public" type="khbm28h3" association="khbm28is"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28iw" memberEnd="khbm28iv khbm28j4">
+	<ownedEnd xmi:id="khbm28j4" visibility="public" type="khbm28h3" association="khbm28iw"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28h4" name=":chemical_compound">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28j6" name="wdt:P31" visibility="public" type="khbm28j5" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28j7" name="wdt:P2868" visibility="public" type="khbm28hk" association="khbm28j8" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28j9" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28ja" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28jb" name="wdt:P2868" visibility="public" type="khbm28hb" association="khbm28jc" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28jd" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28je" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28jf" name="wdt:P769" visibility="public" type="khbm28hk" association="khbm28jg" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28jh" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28ji" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28jj" name="wdt:P769" visibility="public" type="khbm28hb" association="khbm28jk" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28jl" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28jm" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28jn" name="wdt:P279" visibility="public" type="khbm28hb" association="khbm28jo" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28jp" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28jq" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28jr" name="wdt:P3780" visibility="public" type="khbm28ha" association="khbm28js" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28jt" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28ju" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28jv" name="wdt:P2175" visibility="public" type="khbm28h6" association="khbm28jw" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28jx" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28jy" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28jz" name="wdt:P527" visibility="public" type="khbm28h3" association="khbm28k0" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28k1" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28k2" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28k3" name="wdt:P361" visibility="public" type="khbm28h9" association="khbm28k4" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28k5" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28k6" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28k7" name="wdt:P129" visibility="public" type="khbm28he" association="khbm28k8" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28k9" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28ka" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28kb" name="wdt:P703" visibility="public" type="khbm28hj" association="khbm28kc" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28kd" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28ke" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28kf" name="wdt:P3364" visibility="public" type="khbm28h4" association="khbm28kg" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28kh" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28ki" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28kk" name="Extra" visibility="public" type="khbm28kj" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28j8" memberEnd="khbm28j7 khbm28kl">
+	<ownedEnd xmi:id="khbm28kl" visibility="public" type="khbm28h4" association="khbm28j8"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28jc" memberEnd="khbm28jb khbm28km">
+	<ownedEnd xmi:id="khbm28km" visibility="public" type="khbm28h4" association="khbm28jc"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28jg" memberEnd="khbm28jf khbm28kn">
+	<ownedEnd xmi:id="khbm28kn" visibility="public" type="khbm28h4" association="khbm28jg"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28jk" memberEnd="khbm28jj khbm28ko">
+	<ownedEnd xmi:id="khbm28ko" visibility="public" type="khbm28h4" association="khbm28jk"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28jo" memberEnd="khbm28jn khbm28kp">
+	<ownedEnd xmi:id="khbm28kp" visibility="public" type="khbm28h4" association="khbm28jo"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28js" memberEnd="khbm28jr khbm28kq">
+	<ownedEnd xmi:id="khbm28kq" visibility="public" type="khbm28h4" association="khbm28js"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28jw" memberEnd="khbm28jv khbm28kr">
+	<ownedEnd xmi:id="khbm28kr" visibility="public" type="khbm28h4" association="khbm28jw"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28k0" memberEnd="khbm28jz khbm28ks">
+	<ownedEnd xmi:id="khbm28ks" visibility="public" type="khbm28h4" association="khbm28k0"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28k4" memberEnd="khbm28k3 khbm28kt">
+	<ownedEnd xmi:id="khbm28kt" visibility="public" type="khbm28h4" association="khbm28k4"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28k8" memberEnd="khbm28k7 khbm28ku">
+	<ownedEnd xmi:id="khbm28ku" visibility="public" type="khbm28h4" association="khbm28k8"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28kc" memberEnd="khbm28kb khbm28kv">
+	<ownedEnd xmi:id="khbm28kv" visibility="public" type="khbm28h4" association="khbm28kc"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28kg" memberEnd="khbm28kf khbm28kw">
+	<ownedEnd xmi:id="khbm28kw" visibility="public" type="khbm28h4" association="khbm28kg"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28h5" name=":chromosome">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28ky" name="wdt:P31" visibility="public" type="khbm28kx" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28l0" name="Extra" visibility="public" type="khbm28kz" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28h6" name=":disease">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28l2" name="wdt:P31" visibility="public" type="khbm28l1" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28l3" name="wdt:P780" visibility="public" type="khbm28h6" association="khbm28l4" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28l5" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28l6" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28l7" name="wdt:P780" visibility="public" type="khbm28hi" association="khbm28l8" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28l9" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28la" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28lb" name="wdt:P828" visibility="public" type="khbm28hj" association="khbm28lc" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28ld" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28le" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28lf" name="wdt:P2293" visibility="public" type="khbm28h7" association="khbm28lg" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28lh" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28li" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28lj" name="wdt:P927" visibility="public" type="khbm28h1" association="khbm28lk" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28ll" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28lm" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28ln" name="wdt:P2176" visibility="public" type="khbm28h9" association="khbm28lo" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28lp" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28lq" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28lr" name="wdt:P2176" visibility="public" type="khbm28h4" association="khbm28ls" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28lt" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28lu" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28lw" name="Extra" visibility="public" type="khbm28lv" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28l4" memberEnd="khbm28l3 khbm28lx">
+	<ownedEnd xmi:id="khbm28lx" visibility="public" type="khbm28h6" association="khbm28l4"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28l8" memberEnd="khbm28l7 khbm28ly">
+	<ownedEnd xmi:id="khbm28ly" visibility="public" type="khbm28h6" association="khbm28l8"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28lc" memberEnd="khbm28lb khbm28lz">
+	<ownedEnd xmi:id="khbm28lz" visibility="public" type="khbm28h6" association="khbm28lc"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28lg" memberEnd="khbm28lf khbm28m0">
+	<ownedEnd xmi:id="khbm28m0" visibility="public" type="khbm28h6" association="khbm28lg"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28lk" memberEnd="khbm28lj khbm28m1">
+	<ownedEnd xmi:id="khbm28m1" visibility="public" type="khbm28h6" association="khbm28lk"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28lo" memberEnd="khbm28ln khbm28m2">
+	<ownedEnd xmi:id="khbm28m2" visibility="public" type="khbm28h6" association="khbm28lo"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28ls" memberEnd="khbm28lr khbm28m3">
+	<ownedEnd xmi:id="khbm28m3" visibility="public" type="khbm28h6" association="khbm28ls"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28h7" name=":gene">
+	<ownedAttribute xmi:id="khbm28m4" name="wdt:P703" visibility="public" type="khbm28hj" association="khbm28m5" ></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28m6" name="wdt:P684" visibility="public" type="khbm28h7" association="khbm28m7" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28m8" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28m9" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28mc" name="wdt:P682" visibility="public" type="khbm28md" isUnique="true">
+
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28ma" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28mb" value="*"/>	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28me" name="wdt:P688" visibility="public" type="khbm28he" association="khbm28mf" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28mg" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28mh" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28mi" name="wdt:P527" visibility="public" type="khbm28h3" association="khbm28mj" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28mk" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28ml" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28mm" name="wdt:P1057" visibility="public" type="khbm28h5" association="khbm28mn" ></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28mp" name="Extra" visibility="public" type="khbm28mo" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28m5" memberEnd="khbm28m4 khbm28mq">
+	<ownedEnd xmi:id="khbm28mq" visibility="public" type="khbm28h7" association="khbm28m5"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28m7" memberEnd="khbm28m6 khbm28mr">
+	<ownedEnd xmi:id="khbm28mr" visibility="public" type="khbm28h7" association="khbm28m7"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28mf" memberEnd="khbm28me khbm28ms">
+	<ownedEnd xmi:id="khbm28ms" visibility="public" type="khbm28h7" association="khbm28mf"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28mj" memberEnd="khbm28mi khbm28mt">
+	<ownedEnd xmi:id="khbm28mt" visibility="public" type="khbm28h7" association="khbm28mj"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28mn" memberEnd="khbm28mm khbm28mu">
+	<ownedEnd xmi:id="khbm28mu" visibility="public" type="khbm28h7" association="khbm28mn"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28h8" name=":mechanism_of_action">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28mw" name="wdt:P31" visibility="public" type="khbm28mv" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28my" name="Extra" visibility="public" type="khbm28mx" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28h9" name=":medication">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28n0" name="wdt:P31" visibility="public" type="khbm28mz" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28n1" name="wdt:P2175" visibility="public" type="khbm28h6" association="khbm28n2" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28n3" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28n4" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28n5" name="wdt:P3780" visibility="public" type="khbm28ha" association="khbm28n6" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28n7" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28n8" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28n9" name="wdt:P527" visibility="public" type="khbm28h9" association="khbm28na" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28nb" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28nc" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28nd" name="wdt:P527" visibility="public" type="khbm28h3" association="khbm28ne" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28nf" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28ng" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28nh" name="wdt:P769" visibility="public" type="khbm28hb" association="khbm28ni" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28nj" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28nk" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28nl" name="wdt:P769" visibility="public" type="khbm28h4" association="khbm28nm" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28nn" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28no" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28np" name="wdt:P769" visibility="public" type="khbm28hk" association="khbm28nq" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28nr" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28ns" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28nt" name="wdt:P2868" visibility="public" type="khbm28hb" association="khbm28nu" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28nv" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28nw" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28nx" name="wdt:P2868" visibility="public" type="khbm28hk" association="khbm28ny" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28nz" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28o0" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28o1" name="wdt:P279" visibility="public" type="khbm28hb" association="khbm28o2" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28o3" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28o4" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28o5" name="wdt:P279" visibility="public" type="khbm28hk" association="khbm28o6" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28o7" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28o8" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28oa" name="Extra" visibility="public" type="khbm28o9" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28n2" memberEnd="khbm28n1 khbm28ob">
+	<ownedEnd xmi:id="khbm28ob" visibility="public" type="khbm28h9" association="khbm28n2"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28n6" memberEnd="khbm28n5 khbm28oc">
+	<ownedEnd xmi:id="khbm28oc" visibility="public" type="khbm28h9" association="khbm28n6"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28na" memberEnd="khbm28n9 khbm28od">
+	<ownedEnd xmi:id="khbm28od" visibility="public" type="khbm28h9" association="khbm28na"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28ne" memberEnd="khbm28nd khbm28oe">
+	<ownedEnd xmi:id="khbm28oe" visibility="public" type="khbm28h9" association="khbm28ne"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28ni" memberEnd="khbm28nh khbm28of">
+	<ownedEnd xmi:id="khbm28of" visibility="public" type="khbm28h9" association="khbm28ni"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28nm" memberEnd="khbm28nl khbm28og">
+	<ownedEnd xmi:id="khbm28og" visibility="public" type="khbm28h9" association="khbm28nm"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28nq" memberEnd="khbm28np khbm28oh">
+	<ownedEnd xmi:id="khbm28oh" visibility="public" type="khbm28h9" association="khbm28nq"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28nu" memberEnd="khbm28nt khbm28oi">
+	<ownedEnd xmi:id="khbm28oi" visibility="public" type="khbm28h9" association="khbm28nu"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28ny" memberEnd="khbm28nx khbm28oj">
+	<ownedEnd xmi:id="khbm28oj" visibility="public" type="khbm28h9" association="khbm28ny"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28o2" memberEnd="khbm28o1 khbm28ok">
+	<ownedEnd xmi:id="khbm28ok" visibility="public" type="khbm28h9" association="khbm28o2"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28o6" memberEnd="khbm28o5 khbm28ol">
+	<ownedEnd xmi:id="khbm28ol" visibility="public" type="khbm28h9" association="khbm28o6"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28ha" name=":pharmaceutical_product">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28on" name="wdt:P31" visibility="public" type="khbm28om" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28oo" name="wdt:P3781" visibility="public" type="khbm28hk" association="khbm28op" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28oq" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28or" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28os" name="wdt:P3781" visibility="public" type="khbm28hb" association="khbm28ot" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28ou" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28ov" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28ow" name="wdt:P3781" visibility="public" type="khbm28h4" association="khbm28ox" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28oy" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28oz" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28p0" name="wdt:P4044" visibility="public" type="khbm28h6" association="khbm28p1" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28p2" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28p3" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28p5" name="Extra" visibility="public" type="khbm28p4" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28op" memberEnd="khbm28oo khbm28p6">
+	<ownedEnd xmi:id="khbm28p6" visibility="public" type="khbm28ha" association="khbm28op"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28ot" memberEnd="khbm28os khbm28p7">
+	<ownedEnd xmi:id="khbm28p7" visibility="public" type="khbm28ha" association="khbm28ot"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28ox" memberEnd="khbm28ow khbm28p8">
+	<ownedEnd xmi:id="khbm28p8" visibility="public" type="khbm28ha" association="khbm28ox"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28p1" memberEnd="khbm28p0 khbm28p9">
+	<ownedEnd xmi:id="khbm28p9" visibility="public" type="khbm28ha" association="khbm28p1"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28hb" name=":pharmacologic_action">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28pb" name="wdt:P31" visibility="public" type="khbm28pa" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28pc" name="wdt:P3780" visibility="public" type="khbm28ha" association="khbm28pd" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28pe" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28pf" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28pg" name="wdt:P2175" visibility="public" type="khbm28h6" association="khbm28ph" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28pi" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28pj" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28pl" name="Extra" visibility="public" type="khbm28pk" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28pd" memberEnd="khbm28pc khbm28pm">
+	<ownedEnd xmi:id="khbm28pm" visibility="public" type="khbm28hb" association="khbm28pd"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28ph" memberEnd="khbm28pg khbm28pn">
+	<ownedEnd xmi:id="khbm28pn" visibility="public" type="khbm28hb" association="khbm28ph"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28hc" name=":protein_domain">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28pp" name="wdt:P31" visibility="public" type="khbm28po" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28ps" name="wdt:P527" visibility="public" type="khbm28md" isUnique="true">
+
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28pq" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28pr" value="*"/>	</ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28pv" name="wdt:P361" visibility="public" type="khbm28md" isUnique="true">
+
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28pt" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28pu" value="*"/>	</ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28px" name="Extra" visibility="public" type="khbm28pw" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28hd" name=":protein_family">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28pz" name="wdt:P31" visibility="public" type="khbm28py" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28q0" name="wdt:P527" visibility="public" type="khbm28he" association="khbm28q1" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28q2" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28q3" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28q5" name="Extra" visibility="public" type="khbm28q4" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28q1" memberEnd="khbm28q0 khbm28q6">
+	<ownedEnd xmi:id="khbm28q6" visibility="public" type="khbm28hd" association="khbm28q1"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28he" name=":protein">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28q8" name="wdt:P31" visibility="public" type="khbm28q7" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28q9" name="wdt:P129" visibility="public" type="khbm28h9" association="khbm28qa" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28qb" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28qc" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28qd" name="wdt:P129" visibility="public" type="khbm28he" association="khbm28qe" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28qf" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28qg" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28qh" name="wdt:P129" visibility="public" type="khbm28h4" association="khbm28qi" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28qj" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28qk" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28ql" name="wdt:P702" visibility="public" type="khbm28h7" association="khbm28qm" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28qn" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28qo" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28qp" name="wdt:P361" visibility="public" type="khbm28hd" association="khbm28qq" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28qr" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28qs" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28qt" name="wdt:P527" visibility="public" type="khbm28h0" association="khbm28qu" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28qv" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28qw" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28qx" name="wdt:P527" visibility="public" type="khbm28h2" association="khbm28qy" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28qz" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28r0" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28r3" name="wdt:P680" visibility="public" type="khbm28md" isUnique="true">
+
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28r1" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28r2" value="*"/>	</ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28r6" name="wdt:P682" visibility="public" type="khbm28md" isUnique="true">
+
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28r4" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28r5" value="*"/>	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28r7" name="wdt:P703" visibility="public" type="khbm28hj" association="khbm28r8" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28r9" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28ra" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28rb" name="wdt:P681" visibility="public" type="khbm28h1" association="khbm28rc" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28rd" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28re" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28rf" name="wdt:P681" visibility="public" type="khbm28he" association="khbm28rg" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28rh" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28ri" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28rk" name="Extra" visibility="public" type="khbm28rj" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28qa" memberEnd="khbm28q9 khbm28rl">
+	<ownedEnd xmi:id="khbm28rl" visibility="public" type="khbm28he" association="khbm28qa"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28qe" memberEnd="khbm28qd khbm28rm">
+	<ownedEnd xmi:id="khbm28rm" visibility="public" type="khbm28he" association="khbm28qe"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28qi" memberEnd="khbm28qh khbm28rn">
+	<ownedEnd xmi:id="khbm28rn" visibility="public" type="khbm28he" association="khbm28qi"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28qm" memberEnd="khbm28ql khbm28ro">
+	<ownedEnd xmi:id="khbm28ro" visibility="public" type="khbm28he" association="khbm28qm"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28qq" memberEnd="khbm28qp khbm28rp">
+	<ownedEnd xmi:id="khbm28rp" visibility="public" type="khbm28he" association="khbm28qq"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28qu" memberEnd="khbm28qt khbm28rq">
+	<ownedEnd xmi:id="khbm28rq" visibility="public" type="khbm28he" association="khbm28qu"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28qy" memberEnd="khbm28qx khbm28rr">
+	<ownedEnd xmi:id="khbm28rr" visibility="public" type="khbm28he" association="khbm28qy"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28r8" memberEnd="khbm28r7 khbm28rs">
+	<ownedEnd xmi:id="khbm28rs" visibility="public" type="khbm28he" association="khbm28r8"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28rc" memberEnd="khbm28rb khbm28rt">
+	<ownedEnd xmi:id="khbm28rt" visibility="public" type="khbm28he" association="khbm28rc"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28rg" memberEnd="khbm28rf khbm28ru">
+	<ownedEnd xmi:id="khbm28ru" visibility="public" type="khbm28he" association="khbm28rg"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28hf" name=":ribosomal_RNA">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28rw" name="wdt:P31" visibility="public" type="khbm28rv" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28rx" name="wdt:P703" visibility="public" type="khbm28hj" association="khbm28ry" ></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28s0" name="Extra" visibility="public" type="khbm28rz" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28ry" memberEnd="khbm28rx khbm28s1">
+	<ownedEnd xmi:id="khbm28s1" visibility="public" type="khbm28hf" association="khbm28ry"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28hg" name=":sequence_variant">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28s3" name="wdt:P31" visibility="public" type="khbm28s2" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28s4" name="wdt:P361" visibility="public" type="khbm28h4" association="khbm28s5" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28s6" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28s7" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28s8" name="wdt:P3354" visibility="public" type="khbm28h4" association="khbm28s9" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28sa" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28sb" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28sc" name="wdt:P3354" visibility="public" type="khbm28h9" association="khbm28sd" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28se" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28sf" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28sg" name="wdt:P3355" visibility="public" type="khbm28h4" association="khbm28sh" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28si" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28sj" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28sk" name="wdt:P3355" visibility="public" type="khbm28h9" association="khbm28sl" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28sm" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28sn" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28sq" name="wdt:P3433" visibility="public" type="khbm28md" isUnique="true">
+
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28so" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28sp" value="*"/>	</ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28st" name="wdt:P1057" visibility="public" type="khbm28md" isUnique="true">
+
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28sr" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28ss" value="*"/>	</ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28sv" name="Extra" visibility="public" type="khbm28su" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28s5" memberEnd="khbm28s4 khbm28sw">
+	<ownedEnd xmi:id="khbm28sw" visibility="public" type="khbm28hg" association="khbm28s5"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28s9" memberEnd="khbm28s8 khbm28sx">
+	<ownedEnd xmi:id="khbm28sx" visibility="public" type="khbm28hg" association="khbm28s9"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28sd" memberEnd="khbm28sc khbm28sy">
+	<ownedEnd xmi:id="khbm28sy" visibility="public" type="khbm28hg" association="khbm28sd"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28sh" memberEnd="khbm28sg khbm28sz">
+	<ownedEnd xmi:id="khbm28sz" visibility="public" type="khbm28hg" association="khbm28sh"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28sl" memberEnd="khbm28sk khbm28t0">
+	<ownedEnd xmi:id="khbm28t0" visibility="public" type="khbm28hg" association="khbm28sl"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28hh" name=":supersecondary_structure">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28t2" name="wdt:P31" visibility="public" type="khbm28t1" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28t5" name="wdt:P361" visibility="public" type="khbm28md" isUnique="true">
+
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28t3" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28t4" value="*"/>	</ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28t7" name="Extra" visibility="public" type="khbm28t6" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28hi" name=":symptom">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28t9" name="wdt:P31" visibility="public" type="khbm28t8" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28tb" name="Extra" visibility="public" type="khbm28ta" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28hj" name=":taxon">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28td" name="wdt:P31" visibility="public" type="khbm28tc" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28tf" name="Extra" visibility="public" type="khbm28te" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Class" xmi:id="khbm28hk" name=":therapeutic_use">
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28th" name="wdt:P31" visibility="public" type="khbm28tg" isUnique="true">
+	</ownedAttribute>
+	<ownedAttribute xmi:id="khbm28ti" name="wdt:P3781" visibility="public" type="khbm28ha" association="khbm28tj" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28tk" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28tl" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:id="khbm28tm" name="wdt:P2175" visibility="public" type="khbm28h6" association="khbm28tn" >
+		<lowerValue xmi:type="uml:LiteralInteger" xmi:id="khbm28to" />
+		<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="khbm28tp" value="*"/></ownedAttribute>
+	<ownedAttribute xmi:type="uml:Property" xmi:id="khbm28tr" name="Extra" visibility="public" type="khbm28tq" isUnique="true">
+	</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28tj" memberEnd="khbm28ti khbm28ts">
+	<ownedEnd xmi:id="khbm28ts" visibility="public" type="khbm28hk" association="khbm28tj"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Association" xmi:id="khbm28tn" memberEnd="khbm28tm khbm28tt">
+	<ownedEnd xmi:id="khbm28tt" visibility="public" type="khbm28hk" association="khbm28tn"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28gz" name="Prefixes">
+	<ownedLiteral xmi:id="khbm28gt" name="prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#>"/>
+	<ownedLiteral xmi:id="khbm28gu" name="prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#>"/>
+	<ownedLiteral xmi:id="khbm28gv" name="prefix wd: &lt;http://www.wikidata.org/entity/>"/>
+	<ownedLiteral xmi:id="khbm28gw" name="prefix wdt: &lt;http://www.wikidata.org/prop/direct/>"/>
+	<ownedLiteral xmi:id="khbm28gx" name="prefix : &lt;http://example.org/>"/>
+	<ownedLiteral xmi:id="khbm28gy" name="base &lt;http://example.org/>"/>
+</packagedElement>
+<packagedElement xmi:type="uml:PrimitiveType" xmi:id="khbm28md" name="Any"/>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28hl" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28tu" name="wd:Q423026"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28hr" name="Extra_:active_site">
+	<ownedLiteral xmi:id="khbm28tv" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28hu" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28tw" name="wd:Q4936952"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28i4" name="Extra_:anatomical_structure">
+	<ownedLiteral xmi:id="khbm28tx" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28i8" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28ty" name="wd:Q616005"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28ie" name="Extra_:binding_site">
+	<ownedLiteral xmi:id="khbm28tz" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28ih" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28u0" name="wd:Q4915012"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28iz" name="Extra_:biological_pathway">
+	<ownedLiteral xmi:id="khbm28u1" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28j5" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28u2" name="wd:Q11173"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28kj" name="Extra_:chemical_compound">
+	<ownedLiteral xmi:id="khbm28u3" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28kx" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28u4" name="wd:Q37748"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28kz" name="Extra_:chromosome">
+	<ownedLiteral xmi:id="khbm28u5" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28l1" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28u6" name="wd:Q12136"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28lv" name="Extra_:disease">
+	<ownedLiteral xmi:id="khbm28u7" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28mo" name="Extra_:gene">
+	<ownedLiteral xmi:id="khbm28u8" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28mv" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28u9" name="wd:Q3271540"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28mx" name="Extra_:mechanism_of_action">
+	<ownedLiteral xmi:id="khbm28ua" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28mz" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28ub" name="wd:Q12140"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28o9" name="Extra_:medication">
+	<ownedLiteral xmi:id="khbm28uc" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28om" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28ud" name="wd:Q28885102"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28p4" name="Extra_:pharmaceutical_product">
+	<ownedLiteral xmi:id="khbm28ue" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28pa" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28uf" name="wd:Q50377224"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28pk" name="Extra_:pharmacologic_action">
+	<ownedLiteral xmi:id="khbm28ug" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28po" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28uh" name="wd:Q898273"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28pw" name="Extra_:protein_domain">
+	<ownedLiteral xmi:id="khbm28ui" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28py" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28uj" name="wd:Q417841"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28q4" name="Extra_:protein_family">
+	<ownedLiteral xmi:id="khbm28uk" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28q7" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28ul" name="wd:Q8054"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28rj" name="Extra_:protein">
+	<ownedLiteral xmi:id="khbm28um" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28rz" name="Extra_:ribosomal_RNA">
+	<ownedLiteral xmi:id="khbm28un" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28s2" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28uo" name="wd:Q15304597"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28su" name="Extra_:sequence_variant">
+	<ownedLiteral xmi:id="khbm28up" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28t1" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28uq" name="wd:Q7644128"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28t6" name="Extra_:supersecondary_structure">
+	<ownedLiteral xmi:id="khbm28ur" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28t8" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28us" name="wd:Q169872"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28ta" name="Extra_:symptom">
+	<ownedLiteral xmi:id="khbm28ut" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28tc" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28uu" name="wd:Q16521"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28te" name="Extra_:taxon">
+	<ownedLiteral xmi:id="khbm28uv" name="wdt:P31"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28tg" name="wdt:P31">
+	<ownedLiteral xmi:id="khbm28uw" name="wd:Q50379781"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Enumeration" xmi:id="khbm28tq" name="Extra_:therapeutic_use">
+	<ownedLiteral xmi:id="khbm28ux" name="wdt:P31"/>
+</packagedElement>
+</uml:Model>
