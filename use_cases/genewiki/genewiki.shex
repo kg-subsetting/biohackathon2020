@@ -59,7 +59,7 @@ prefix :    <http://example.org/>
 }
 
 :gene EXTRA wdt:P31 {
-  wdt:P703  @:taxon  ;
+  wdt:P703  @:taxon * ;
   wdt:P684  @:gene * ; 
   wdt:P682  @:biological_process ;
   wdt:P688  @:protein * ;
@@ -129,7 +129,7 @@ prefix :    <http://example.org/>
 
 :ribosomal_RNA EXTRA wdt:P31 {
   wdt:P31  [ wd:Q28885102 ] ;
-  wdt:P703 @:taxon 
+  wdt:P703 @:taxon *
 }
 
 :sequence_variant EXTRA wdt:P31 {
