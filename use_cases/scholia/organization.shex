@@ -33,7 +33,7 @@ start=@:citing_work
 }
 
 :organizationTemp {
-  wdt:P361 @:organization ?;
+  wdt:P361 @:organization *;
 }
 
 :organization  {
