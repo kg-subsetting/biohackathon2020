@@ -66,7 +66,7 @@ prefix :    <http://example.org/>
   wdt:P682  . * ;  # TODO: It is not clear in the diagram
   wdt:P688  @:protein * ;
   wdt:P527  @:biological_pathway *;
-  wdt:P1057 @:chromosome ; # TODO: I added it but didn't see the arc in the diagram
+  wdt:P1057 @:chromosome * ; # TODO: I added it but didn't see the arc in the diagram
 }
 
 :mechanism_of_action EXTRA wdt:P31 {
@@ -131,7 +131,7 @@ prefix :    <http://example.org/>
 
 :ribosomal_RNA EXTRA wdt:P31 {
   wdt:P31  [ wd:Q28885102 ] ;
-  wdt:P703 @:taxon 
+  wdt:P703 @:taxon *
 }
 
 :sequence_variant EXTRA wdt:P31 {
@@ -150,7 +150,7 @@ prefix :    <http://example.org/>
 
 # TODO: I didn't find it in the diagram
 :supersecondary_structure EXTRA wdt:P31 {
-  wdt:P31 [ wd:Q7644128 ] ;
+  wdt:P31 [ wd:Q7644128 ] ; 
   wdt:P361 . * 
 }
 
