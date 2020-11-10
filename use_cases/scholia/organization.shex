@@ -1,0 +1,42 @@
+PREFIX xsd:    <http://example.org/>
+PREFIX :    <http://bigcat.unimaas.nl/>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd:    <http://www.wikidata.org/entity/>
+PREFIX wdt:    <http://www.wikidata.org/prop/direct/>
+
+:citing_work {
+   wdt:P2860 @:work *; 
+   wdt:P577 xsd:dateTime ?;
+}
+
+:work {
+  wdt:P31      . *;
+  wdt:P50  @:researcher * ;
+  wdt:P921 IRI ? ;
+  wdt:P1104  xsd:string ? ;
+  wdt:P577  xsd:dateTime ? ;
+}
+
+:researcher {
+  
+  wdt:P108 @:organizationTemp *;
+  wdt:P463 @:organizationTemp * ;
+  wdt:P1416 @:organizationTemp * ; 
+  rdfs:label xsd:string ? ;
+  wdt:P496 xsd:string ? ;
+  wdt:P166 IRI * ;
+  wdt:P21 IRI ? ;
+  wdt:P184 @:researcher * ;
+}
+
+:organizationTemp {
+  wdt:P361 @:organization *;
+}
+
+:organization  {
+  wdt:P31      . *;
+}
+
+
+
