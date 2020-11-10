@@ -22,7 +22,6 @@ prefix :    <http://example.org/>
 
 :biological_pathway EXTRA wdt:P31 {
   wdt:P31 [ wd:Q4915012 ] ;
-  # It appears in the SPARQL query wdt:P31  @<biological_process> * ;
   wdt:P361 @:biological_pathway * ; 
   wdt:P361 @:gene * ; 
   wdt:P527 @:biological_pathway * ;
@@ -38,9 +37,8 @@ prefix :    <http://example.org/>
   wdt:P279  @:pharmacologic_action * ;
   wdt:P3780 @:pharmaceutical_product * ;
   wdt:P2175 @:disease * ;
-  wdt:P527  @:biological_pathway * ; # TODO: The diagram seems to be in the other direction?
+  wdt:P361  @:biological_pathway * ;
   wdt:P361  @:medication * ; 
-  wdt:P129  @:protein * ;  # TODO: The diagram seems to go in the other direction
   wdt:P703  @:taxon * ;
   wdt:P3364 @:chemical_compound * 
 }
@@ -63,10 +61,10 @@ prefix :    <http://example.org/>
 :gene EXTRA wdt:P31 {
   wdt:P703  @:taxon * ;
   wdt:P684  @:gene * ; 
-  wdt:P682  . * ;  # TODO: It is not clear in the diagram
+  wdt:P682  @:biological_process ;
   wdt:P688  @:protein * ;
   wdt:P527  @:biological_pathway *;
-  wdt:P1057 @:chromosome * ; # TODO: I added it but didn't see the arc in the diagram
+  wdt:P1057 @:chromosome ;
 }
 
 :mechanism_of_action EXTRA wdt:P31 {
@@ -78,19 +76,19 @@ prefix :    <http://example.org/>
   wdt:P2175 @:disease * ;
   wdt:P3780 @:pharmaceutical_product * ;
   wdt:P527  @:medication * ;
-  wdt:P527  @:biological_pathway * ;  # TODO: Not sure if this is the right direction
+  wdt:P361  @:biological_pathway * ;
   wdt:P769  @:pharmacologic_action * ;
   wdt:P769  @:chemical_compound * ;
   wdt:P769  @:therapeutic_use * ;
   wdt:P2868 @:pharmacologic_action * ;
   wdt:P2868 @:therapeutic_use * ;
-  wdt:P279  @:pharmacologic_action * ;  # TODO: Review, because in the SPARQL query it adds a explicit value
-  wdt:P279  @:therapeutic_use * ;  # Not sure about this
+  wdt:P279  @:pharmacologic_action * ;
+  wdt:P279  @:therapeutic_use * ;
 }
 
 :pharmaceutical_product EXTRA wdt:P31 {
   wdt:P31  [ wd:Q28885102 ] ;
-  wdt:P3781 @:therapeutic_use * ; # TODO: Review
+  wdt:P3781 @:therapeutic_use * ;
   wdt:P3781 @:pharmacologic_action * ;
   wdt:P3781 @:chemical_compound * ;
   wdt:P4044 @:disease *
@@ -104,8 +102,8 @@ prefix :    <http://example.org/>
 
 :protein_domain EXTRA wdt:P31 {
   wdt:P31  [ wd:Q898273 ] ;
-  wdt:P527 . * ; # TODO: Didn't see <protein_domain> in the figure
-  wdt:P361 . * ; 
+  wdt:P527 @:protein_domain * ;
+  wdt:P361 @:protein_domain * ; 
 }
 
 :protein_family EXTRA wdt:P31 {
@@ -122,8 +120,8 @@ prefix :    <http://example.org/>
   wdt:P361 @:protein_family * ; 
   wdt:P527 @:active_site * ;
   wdt:P527 @:binding_site * ;
-  wdt:P680 . * ; #TODO: Didn't find it in the diagram
-  wdt:P682 . * ; #TODO: Didn't find it in the diagram
+  wdt:P680 @:molecular_function * ;
+  wdt:P682 @:biological_process * ;
   wdt:P703 @:taxon * ;
   wdt:P681 @:anatomical_structure * ;
   wdt:P681 @:protein * ;
@@ -136,25 +134,21 @@ prefix :    <http://example.org/>
 
 :sequence_variant EXTRA wdt:P31 {
   wdt:P31   [ wd:Q15304597 ] ;
-  wdt:P361  @:chemical_compound * ; 
-    # TODO: Review the SPARQL query because it seems to use a different property instead of part_of for negative_therapeutic_predictor.
+  wdt:P3355  @:chemical_compound * ; 
   wdt:P3354 @:chemical_compound * ; 
   wdt:P3354 @:medication * ; 
   wdt:P3355 @:chemical_compound * ;
   wdt:P3355 @:medication * ;
-  wdt:P3433 . * ; # TODO: Didn't find it in the diagram
-  wdt:P1057 . * ; # TODO: Didn't find it in the diagram...?chromosome.
-  # TODO: Does it lack found in taxon ?
+  wdt:P3433 @:gene * ;
+  wdt:P1057 @:chromosome * ;
 }
 
 
-# TODO: I didn't find it in the diagram
 :supersecondary_structure EXTRA wdt:P31 {
-  wdt:P31 [ wd:Q7644128 ] ; 
+  wdt:P31 [ wd:Q7644128 ] ;
   wdt:P361 . * 
 }
 
-# TODO: I didn't find it in the diagram
 :symptom EXTRA wdt:P31 {
   wdt:P31 [ wd:Q169872 ]
 }
