@@ -61,7 +61,7 @@ prefix :    <http://example.org/>
 }
 
 :gene EXTRA wdt:P31 {
-  wdt:P703  @:taxon  ;
+  wdt:P703  @:taxon * ;
   wdt:P684  @:gene * ; 
   wdt:P682  . * ;  # TODO: It is not clear in the diagram
   wdt:P688  @:protein * ;
