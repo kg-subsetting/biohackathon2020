@@ -28,6 +28,8 @@ prefix :    <http://example.org/>
   wdt:P527 @:gene * ; 
 }
 
+:biological_process {}
+
 :chemical_compound EXTRA wdt:P31 {
   wdt:P31  [ wd:Q11173 ] ;
   wdt:P2868 @:therapeutic_use * ;
@@ -85,6 +87,8 @@ prefix :    <http://example.org/>
   wdt:P279  @:pharmacologic_action * ;
   wdt:P279  @:therapeutic_use * ;
 }
+
+:molecular_function {}
 
 :pharmaceutical_product EXTRA wdt:P31 {
   wdt:P31  [ wd:Q28885102 ] ;
