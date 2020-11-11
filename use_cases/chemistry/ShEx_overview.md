@@ -18,3 +18,4 @@ Related schemes (data):
 - [SPARQL Endpoint](https://www.wikidata.org/wiki/EntitySchema:E208).
 - [API endpoint](https://www.wikidata.org/wiki/EntitySchema:E209)
 - [Wikidata Item](https://www.wikidata.org/wiki/EntitySchema:E3)
+- [Wikidata Labels/Descriptions](https://www.wikidata.org/wiki/EntitySchema:E4)
