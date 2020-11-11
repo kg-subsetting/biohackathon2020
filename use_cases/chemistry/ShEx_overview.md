@@ -3,6 +3,7 @@
 - [Stereoisomer](https://www.wikidata.org/wiki/EntitySchema:E241)
 - [Lipid](https://www.wikidata.org/wiki/EntitySchema:E232)
 - [Chemical Compound](https://www.wikidata.org/wiki/EntitySchema:E239)
+- [Natural Compound](https://www.wikidata.org/wiki/EntitySchema:E240)
 
 Related schemes (biology):
 - [Macromolecular Complex](https://www.wikidata.org/wiki/EntitySchema:E186)
