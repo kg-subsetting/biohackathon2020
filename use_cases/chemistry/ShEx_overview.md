@@ -15,8 +15,10 @@ Currently Missing Schemes:
 - Charged molecules
 - Drug-target interactions
 - Chemical interactions (see also related schemes)
-- Chemical annotation (Inchi, Inchikey, Smiles at least)
-- Chemical families.
+- Chemical structure annotation (Inchi, Inchikey, SMILES at least)
+- Chemical identifier annotation
+- Chemical data (Mass Specs)
+- Chemical families
 
 Related schemes (biology):
 - [Macromolecular Complex](https://www.wikidata.org/wiki/EntitySchema:E186)
