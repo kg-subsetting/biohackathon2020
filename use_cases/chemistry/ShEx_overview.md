@@ -14,6 +14,7 @@ Related schemes (biology):
 - [Protein Family](https://www.wikidata.org/wiki/EntitySchema:E233)
 - [Human Protein](https://www.wikidata.org/wiki/EntitySchema:E38)
 - [Complex portal](https://www.wikidata.org/wiki/EntitySchema:E194)
+- [Biological pathway in Wikidata](https://www.wikidata.org/wiki/EntitySchema:E87)
 - [Reactome Pathway](https://www.wikidata.org/wiki/EntitySchema:E39)
 - [biological pathway sourced from WikiPathways in Wikidata](https://www.wikidata.org/wiki/EntitySchema:E41) and [Native WikiPathways Scheme](https://www.wikidata.org/wiki/EntitySchema:E86)
 - [Disease](https://www.wikidata.org/wiki/EntitySchema:E69)
