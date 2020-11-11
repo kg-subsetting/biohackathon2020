@@ -15,3 +15,4 @@ Related schemes (data):
 - [Dataset (1)](https://www.wikidata.org/wiki/EntitySchema:E112) and [Dataset (2)](https://www.wikidata.org/wiki/EntitySchema:E207)
 - [SPARQL Endpoint](https://www.wikidata.org/wiki/EntitySchema:E208).
 - [API endpoint](https://www.wikidata.org/wiki/EntitySchema:E209)
+- [Wikidata Item](https://www.wikidata.org/wiki/EntitySchema:E3)
