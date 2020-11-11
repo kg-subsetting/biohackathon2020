@@ -7,4 +7,5 @@ Related schemes:
 - [Protein](https://www.wikidata.org/wiki/EntitySchema:E167)
 - [Complex portal](https://www.wikidata.org/wiki/EntitySchema:E194)
 - [Dataset (1)](https://www.wikidata.org/wiki/EntitySchema:E112) and [Dataset (2)](https://www.wikidata.org/wiki/EntitySchema:E207)
+- [SPARQL Endpoint](https://www.wikidata.org/wiki/EntitySchema:E208).
 
