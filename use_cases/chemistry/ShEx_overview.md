@@ -11,9 +11,12 @@ Currently [available](https://www.wikidata.org/wiki/Wikidata:Database_reports/En
 - [Pharmaceutical drug](https://www.wikidata.org/wiki/EntitySchema:E72)
 
 Currently Missing Schemes:
-- subclass of chemical compound
-- charged molecules
-- 
+- Subclass of chemical compound
+- Charged molecules
+- Drug-target interactions
+- Chemical interactions (see also related schemes)
+- Chemical annotation (Inchi, Inchikey, Smiles at least)
+- Chemical families.
 
 Related schemes (biology):
 - [Macromolecular Complex](https://www.wikidata.org/wiki/EntitySchema:E186)
