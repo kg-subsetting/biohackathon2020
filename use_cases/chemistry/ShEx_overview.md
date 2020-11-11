@@ -1,5 +1,7 @@
 ## Overview list of [existing ShEx schemes](https://www.wikidata.org/wiki/Special:AllPages?from=&to=&namespace=640) for Chemistry/Metabolite related entities in Wikidata
 
+Currently [available](https://www.wikidata.org/wiki/Wikidata:Database_reports/EntitySchema_directory#chemistry)
+
 - [Stereoisomer](https://www.wikidata.org/wiki/EntitySchema:E241)
 - [Lipid](https://www.wikidata.org/wiki/EntitySchema:E232)
 - [Chemical Compound](https://www.wikidata.org/wiki/EntitySchema:E239)
@@ -7,6 +9,11 @@
 - [Chemical Element](https://www.wikidata.org/wiki/EntitySchema:E46)
 - [Racemic mixture](https://www.wikidata.org/wiki/EntitySchema:E47)
 - [Pharmaceutical drug](https://www.wikidata.org/wiki/EntitySchema:E72)
+
+Currently Missing Schemes:
+- subclass of chemical compound
+- charged molecules
+- 
 
 Related schemes (biology):
 - [Macromolecular Complex](https://www.wikidata.org/wiki/EntitySchema:E186)
