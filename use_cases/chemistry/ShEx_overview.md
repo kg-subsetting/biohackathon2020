@@ -4,6 +4,7 @@
 - [Lipid](https://www.wikidata.org/wiki/EntitySchema:E232)
 - [Chemical Compound](https://www.wikidata.org/wiki/EntitySchema:E239)
 - [Natural Compound](https://www.wikidata.org/wiki/EntitySchema:E240)
+- [Chemical Element](https://www.wikidata.org/wiki/EntitySchema:E46)
 
 Related schemes (biology):
 - [Macromolecular Complex](https://www.wikidata.org/wiki/EntitySchema:E186)
