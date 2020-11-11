@@ -6,6 +6,7 @@
 Related schemes (biology):
 - [Macromolecular Complex](https://www.wikidata.org/wiki/EntitySchema:E186)
 - [Protein](https://www.wikidata.org/wiki/EntitySchema:E167)
+- [Protein Family](https://www.wikidata.org/wiki/EntitySchema:E233)
 - [Complex portal](https://www.wikidata.org/wiki/EntitySchema:E194)
 
 Related schemes (data):
