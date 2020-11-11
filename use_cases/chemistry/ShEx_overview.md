@@ -12,6 +12,7 @@ Related schemes (biology):
 - [Human Protein](https://www.wikidata.org/wiki/EntitySchema:E38)
 - [Complex portal](https://www.wikidata.org/wiki/EntitySchema:E194)
 - [Reactome Pathway](https://www.wikidata.org/wiki/EntitySchema:E39)
+- [biological pathway sourced from WikiPathways in Wikidata]https://www.wikidata.org/wiki/EntitySchema:E41)
 
 Related schemes (data):
 - [Dataset (1)](https://www.wikidata.org/wiki/EntitySchema:E112) and [Dataset (2)](https://www.wikidata.org/wiki/EntitySchema:E207)
