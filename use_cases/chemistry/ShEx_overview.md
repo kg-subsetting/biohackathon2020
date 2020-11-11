@@ -2,3 +2,4 @@
 
 - [Stereoisomer](https://www.wikidata.org/wiki/EntitySchema:E241)
 - [Dataset](https://www.wikidata.org/wiki/EntitySchema:E112)
+- [Protein](https://www.wikidata.org/wiki/EntitySchema:E167)
