@@ -11,6 +11,7 @@ Currently [available](https://www.wikidata.org/wiki/Wikidata:Database_reports/En
 - [Pharmaceutical drug](https://www.wikidata.org/wiki/EntitySchema:E72)
 
 Currently Missing Schemes:
+- All chemicals --> [Example](https://github.com/bridgedb/create-bridgedb-metabolites/blob/master/wikidata/names.rq)
 - Subclass of chemical compound
 - Charged molecules
 - Drug-target interactions
