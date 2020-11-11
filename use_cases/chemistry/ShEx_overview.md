@@ -6,5 +6,5 @@ Related schemes:
 - [Macromolecular Complex](https://www.wikidata.org/wiki/EntitySchema:E186)
 - [Protein](https://www.wikidata.org/wiki/EntitySchema:E167)
 - [Complex portal](https://www.wikidata.org/wiki/EntitySchema:E194)
-- [Dataset](https://www.wikidata.org/wiki/EntitySchema:E112)
+- [Dataset (1)](https://www.wikidata.org/wiki/EntitySchema:E112) and [Dataset (2)](https://www.wikidata.org/wiki/EntitySchema:E207)
 
