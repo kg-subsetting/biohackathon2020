@@ -5,6 +5,7 @@
 - [Chemical Compound](https://www.wikidata.org/wiki/EntitySchema:E239)
 - [Natural Compound](https://www.wikidata.org/wiki/EntitySchema:E240)
 - [Chemical Element](https://www.wikidata.org/wiki/EntitySchema:E46)
+- [Racemic mixture](https://www.wikidata.org/wiki/EntitySchema:E47)
 
 Related schemes (biology):
 - [Macromolecular Complex](https://www.wikidata.org/wiki/EntitySchema:E186)
