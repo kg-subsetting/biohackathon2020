@@ -186,10 +186,140 @@ Separate language for wikidata:
 Use case about automatic fact-checking using wikidata
 
 
-## Meeetting overlapped with ShEx CG meeting
+## Meeting overlapped with ShEx CG meeting
 
-Invited people: Kat Torhnton, Nishad Thalhath, Tom Baker, Anastasiia
+Invited people: Kat Thornton, Nishad Thalhath, Tom Baker, Anastasiia
+
+Discussion about WDump/Wikidata subsetting language
+Authorship of Entity schemas at Wikidata
+
+Tasks for tomorrow: 
+- Dan, connect to the WDump tool's author
+    - Connect with entity schemas/wdumper
+- Eric, continue with slurper
+- Guillermo, look at wdumper
+- Kat, look for interesting entity schemas
+    - Finn's entity schemas
+- Denise, chemistry oriented entity schemas
+    - Prototype of a schema around Chemistry
+- Alejandro, finish implementation of subsetting script using PyShEx.
+- Seyed: Continue working with Wdump
+- 
+
+# 12/Nov/2020
+
+We start the day noticing that there is a issue with Wikidata's RDF representation that returns blank nodes.
+
+### Reproducing the problem:
+
+- ShEx template used: [https://raw.githubusercontent.com/kg-subsetting/biohackathon2020/main/use_cases/scholia/organization.shex](https://raw.githubusercontent.com/kg-subsetting/biohackathon2020/main/use_cases/scholia/organization.shex)
+
+- The query used to get the items:
 
 
+```SPARQL
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+ 
+SELECT DISTINCT ?item WHERE {?work wdt:P50 / (wdt:P108 | wdt:P463 | (wdt:P1416/wdt:P361*)) wd:Q27177633. ?item wdt:P2860 ?work.} LIMIT 100
+```
+
+- The query that contains the blank node where the exception in PyShEx is raised:
+
+```SPARQL
+SELECT ?s ?p ?o (isBlank(?o) as ?isBlank) {<http://www.wikidata.org/entity/Q313093> <http://www.wikidata.org/prop/direct/P184> ?o}
+```
+
+### Issue raised to Wikidata's Phabricator
+
+
+### Several appearances of blank nodes:
+
+```turtle
+s:Q42-bf7e1294-4f0f-3511-ab5f-81f47f5c98cb a wikibase:Statement ;
+	pq:P3680 _:4249d9c21f8b973644e0eab84cdaaf17 ;
+    ...
+```
+
+```turtle
+wdno:P31 a owl:Class ;
+	owl:complementOf _:0b8bd71b926a65ca3fa72e5d9103e4d6 .
+
+_:0b8bd71b926a65ca3fa72e5d9103e4d6 a owl:Restriction ;
+	owl:onProperty wdt:P31 ;
+	owl:someValuesFrom owl:Thing .
+```
+---
+
+During the biohackathon 2020 where we are working on subsetting wikidata, we ran into the issue of blank notes being used in the RDF of Wikidata to express unknown and no values. Unfortunately this isn't consistent because blank notes are also used to express other things such as owl:complementOf (e.g. Q42).
+
+These blank nodes are also problematic for anything that traverses wikidata node-by-node such as faceted browsers or ShEx validators.
+
+It is not explicitly incorrect to have blank nodes in RDF data, but it is:
+1. inconsistent with the approach that Wikidata has taken (which is to avoid blank nodes)
+2. ambiguous because in RDF, blank nodes do not imply unknown values, they are simply *unidentified* nodes in the graph.
+
+Steps to Reproduce:
+* GET http://www.wikidata.org/entity/Q313093.ttl
+* look for "_:" (currently _:2d22892344b969be376b57170b5e495f)
+* try a SPARQL query for all properties of that node
+``` SELECT ?P ?o { _:2d22892344b969be376b57170b5e495f ?p ?o }```
+* Because of the semantics of SPARQL, this will try to get every triple in the database.
+
+Remedy:
+
+Invent a system-wide identifier for unknown values and use that Q identifier for all references to unknow value, e.g. change:
+```
+wd:Q313093 wdt:P184 _:2d22892344b969be376b57170b5e495f
+```
+to:
+```
+wd:Q313093 wdt:P184 wd:Q98765
+```
+
+-----
+
+When 
+* ShEx template used: https://raw.githubusercontent.com/kg-subsetting/biohackathon2020/main/use_cases/scholia/organization.shex
+
+The query used to get the items:
+
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+ 
+SELECT DISTINCT ?item WHERE {?work wdt:P50 / (wdt:P108 | wdt:P463 | (wdt:P1416/wdt:P361*)) wd:Q27177633. ?item wdt:P2860 ?work.} LIMIT 100
+The query that contains the balnk node where the exception in PyShEx is raised:
+SELECT ?s ?p ?o (isBlank(?o) as ?isBlank) {<http://www.wikidata.org/entity/Q313093>
+
+
+
+## Approaches for subsetting/slurping
+
+- Matched graph
+    - Exact triples that have been used when validating
+- Slurp graph
+    - The neighbourhood of the items that are part of the validation
+- Mapping/transformig while slurping
+
+## Limitations of Wikidata
+
+Ammar's raised the issue of confronting "too many requests" when validating real wikidata
+
+# Actions already done 
+- Ammar attempted to generate slurps...several problems detected meanwhile:
+    - Wikidata's limitations
+        - Blank nodes
+        - Too many requests
+- Dan exchanged info with WDump's author who is planning to join us 
+    - [WDump country dump](https://zenodo.org/record/4044634#.X60MXMj0lPY)
+- Guillermo: problems installing [WDumper](https://wdumps.toolforge.org/) gradle
+- Labra: Slide 7 [Map of approaches](https://docs.google.com/presentation/d/106cjMJReNXkV-dOwOHXAl7P982nZjwtUnagUV0HqwdM/edit?usp=sharing)
+- Alejandro: Creation of a [command line script](https://github.com/kg-subsetting/biohackathon2020/tree/main/pyshex_subsetting) that generates a subset to a ttl file. 
+- Andra talked about KGTK: https://kgtk.readthedocs.io/en/latest/
+
+
+## Things to do:
+- Eric: Transform the GeneWiki ShEx to the Json format needed by WDumper
+- Guillermo: Convert the GeneWiki/Json to SPARQL queries
 
 [![hackmd-github-sync-badge](https://hackmd.io/5nKOyk8qQTO5DSCa_M5p3g/badge)](https://hackmd.io/5nKOyk8qQTO5DSCa_M5p3g)
