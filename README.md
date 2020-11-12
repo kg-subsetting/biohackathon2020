@@ -322,4 +322,28 @@ Ammar's raised the issue of confronting "too many requests" when validating real
 - Eric: Transform the GeneWiki ShEx to the Json format needed by WDumper
 - Guillermo: Convert the GeneWiki/Json to SPARQL queries
 
+
+## Joint meeting with Bioschemas
+- 15:30h Participants: Liza Ovchinnikova, Alasdair Gray, Ivan Micetic, Dan Brickley, Eric Prud'hommeaux, Guillermo B., Andra Waagmeester, Petro Papadopoulos, Denise
+    - Creating subsets and converting them to other useful schemas
+    - ShEx patterns for markup
+    - Vocab mappings
+
+Similar use cases:
+[Underlay](https://www.underlay.org/)
+
+[Taxon](https://bioschemas.org/profiles/Taxon) --- schema from bioschemas?
+- Type inspired by DarwinCore and reuses similar properties
+- Separates the Taxa from the name associated with it
+  - Name modelled as a [TaxonName](https://bioschemas.org/profiles/TaxonName) 
+
+
+Talk with Benno Fünfstück, author of WDumper about the tool. 
+- User's feedback about what kind of dumps they create?
+- The dump is compressed
+- Talk about the JSON configuration file
+- It works on a local dump of wikidata
+- It is based on [Wikidata Toolkit](https://www.mediawiki.org/wiki/Wikidata_Toolkit). [API](https://wikidata.github.io/Wikidata-Toolkit/)
+
+
 [![hackmd-github-sync-badge](https://hackmd.io/5nKOyk8qQTO5DSCa_M5p3g/badge)](https://hackmd.io/5nKOyk8qQTO5DSCa_M5p3g)
