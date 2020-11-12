@@ -1,0 +1,10 @@
+sparql """SELECT * WHERE {
+   ?disease wdt:P699 ?doid .
+} 
+LIMIT 5 
+OFFSET 10
+"""@:disease,
+sparql """SELECT * WHERE {
+   ?taxon ... ?doid .
+}"""@:taxon
+. . .
