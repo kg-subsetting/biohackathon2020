@@ -2,8 +2,8 @@
     {
         "key":"citing_work_1",
         "schemaLabel": "citing work",
-        "shapeLabel":"citing_work",
-        "schemaURL": "https://raw.githubusercontent.com/kg-subsetting/biohackathon2020/main/use_cases/scholia/organization2.shex",
+        "shapeLabel":"http://ironic.ha/scholia#citing_work",
+        "schemaURL": "https://raw.githubusercontent.com/kg-subsetting/biohackathon2020/main/use_cases/scholia/organization-ShapeDesignerJava.shex",
         "dataLabel": "Get 1 citing work from Wikidata" ,
         "data": "Endpoint: https://query.wikidata.org/sparql",
         "queryMap": "SPARQL '''SELECT DISTINCT ?citing_work WHERE {?work wdt:P50 / (wdt:P108 | wdt:P463 | (wdt:P1416/wdt:P361*)) wd:Q27177633. ?citing_work wdt:P2860 ?work.} LIMIT 1'''@START",
