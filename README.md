@@ -7,6 +7,28 @@
 
 # Participants
 
+## Short version (only name/email/affiliation)
+
+I tried to order the list alphabetically by last name...but in some cases I was not sure
+
+| Name | email | Affiliation | Twitter (optional) |
+| -------- | -------- | -------- |---|
+|Ammar Ammar |ammar257ammar@gmail.com / a.ammar@maastrichtuniversity.nl  | Maastricht University | [@ammarECR](https://twitter.com/ammarecr) |
+|Guillermo Benjaminsen |guiben@google.com / guille.benj@gmail.com | Google (intern), Universidad de Buenos Aires| [@guillebenj](https://twitter.com/guillebenj) |
+| Dan Brickley | danbri@google.com | Google, London UK. | [@danbri](https://twitter.com/danbri) |
+|Alejandro González Hevia| alejandrgh11@gmail.com  | University of Oviedo, Spain| |
+| Jose Emilio Labra Gayo     | labra@uniovi.es     | University of Oviedo, Spain | [@jelabra](https://twitter.com/jelabra) |
+|Eric Prud'hommaux | eric@w3.org | Janeiro Digital, W3C/MIT | what's a Twitter? |
+|Denise  Slenter | denise.slenter@maastrichtuniversity.nl|Maastricht University |[@SMaLLCaT4Sci](https://twitter.com/smallcat4sci) |
+|Harold Solbrig | solbrig@jhu.edu | Johns Hopkins University | |
+|Seyed Amir Hosseini Beghaeiraveri  |sh200@hw.ac.uk | Heriot-Watt University, UK.| |
+|Benno Fünkfstük | benno.fuenfstueck@mailbox.tu-dresden.de | TU Dresden | |
+|Andra Waagmeester | andra@micel.io |Micelio / Gene Wiki | @andrawaag |
+|Liza?  | | | |
+
+
+
+
 ## Jose Emilio Labra Gayo
 
 Contacts: [Twitter: @jelabra](https://twitter.com/jelabra), [Github: labra](https://github.com/labra)
@@ -1065,9 +1087,10 @@ So basically until this moment: all available implementations of ShEx slurpers (
     - Add feature about graph traversing?
     - Review and run the JSON config files that were generated (Seyed/Eric)
     - Local installation of WDumper (Seyed)
+        - requires an entire dump of Wididata JSON (~17G zipped)
 - Wikidata Subsetting Language?? (JSON)
     - Seyed
-- ShEx hackathon/hands-on event every 2 weeks
+- ShEx hackathon/hands-on event every 2 weeks (alternating with CG meeting)
 
 # Chemistry entity schema draft
 
