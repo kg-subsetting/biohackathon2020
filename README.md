@@ -2,7 +2,8 @@
 
 - [Use cases](https://hackmd.io/5nKOyk8qQTO5DSCa_M5p3g#Use-cases)
 - [Technical approach](https://hackmd.io/5nKOyk8qQTO5DSCa_M5p3g#Use-cases)
-
+- []()
+- [Future plans](https://hackmd.io/5nKOyk8qQTO5DSCa_M5p3g#Future-plans)
 
 # Participants
 
@@ -344,6 +345,803 @@ Talk with Benno Fünfstück, author of WDumper about the tool.
 - Talk about the JSON configuration file
 - It works on a local dump of wikidata
 - It is based on [Wikidata Toolkit](https://www.mediawiki.org/wiki/Wikidata_Toolkit). [API](https://wikidata.github.io/Wikidata-Toolkit/)
+- No useful for graph-level queries
+- We can obtain a subset of Wikidata if we know the Properties...but not a cyclic data model where we go from severl items
+- 
+
+
+
+### from ShEx
+
+```turtle
+:gene EXTRA wdt:P31 {
+  wdt:P703  @:taxon * ;
+  wdt:P684  @:gene * ; 
+  wdt:P682  @:biological_process ;
+  wdt:P688  @:protein * ;
+  wdt:P527  @:biological_pathway *;
+  wdt:P1057 @:chromosome ;
+}
+```
+
+### to wdump config (discussion)
+
+```json
+{ "entities": [ // OR'd
+    { "type": "item", "properties": [ // AND'd
+        { "type": "entityid",
+          "value": "Q7187", // "gene"
+          "property": "P31" } ] },
+    { "type": "item", "properties": [ // AND'd
+        { "type": "entityid",
+          "value": "Q7187b", // "gene subclass 1"
+          "property": "P31" } ] }
+  ],
+  "labels": true, "aliases": true,
+  "sitelinks": true, "truthy": false, "meta": true, "descriptions": true,
+  "statements": [
+    { "qualifiers": false, "full": false,
+      "references": false, "simple": true
+    },
+    { "properties": [
+         "P703", // taxon
+         "P684", // ortholog_gene
+         "P682", // biological_process
+         "P688", // protein_encoded_by_gene
+         "P527", // has_part
+         "P1057" // chromosome
+      ],
+      "full": true, "simple": false, "references": false,
+      "qualifiers": false, "rank": "non-deprecated"
+    }
+  ]
+}
+```
+
+### current output
+
+ericP: I scripted a dump for getting all the triples from the entities of interest by following this template:
+
+      {
+        version: 1,
+        __name: sh.id.substr(NS_ex.length),
+        entities: [
+          {
+            id: id++,
+            type: "item",
+            properties: [
+              {
+                id: id++,
+                type: "entityid",
+                rank: "all",
+                value: type,
+                property: ""
+              }
+            ]
+          }
+        ],
+        meta: true,
+        aliases: true,
+        sitelinks: true,
+        descriptions: true,
+        labels: true,
+        statements: [
+          {
+            id: id++,
+            qualifiers: false,
+            simple: true,
+            rank: "all",
+            full: false,
+            references: false
+          }
+        ]
+      }
+
+The only inputs there are the `__name` which was just for readers' orientation (would wdumper safely ignore that property?), the value on the only entity property, and three places where I saw ids in the output.
+
+I collected all of the dump configs into an array below. (Would wdumper accept such a packaging of multiple dump configs?)
+
+How would I upload configs (vs. using the UI) to start a job?
+
+```json=
+./cli.js -x ../../use_cases/genewiki/genewiki.shex
+skipping http://example.org/biological_process: TypeError: Cannot read property 'expressions' of undefined
+skipping http://example.org/chromosome: TypeError: Cannot read property 'filter' of undefined
+skipping http://example.org/mechanism_of_action: TypeError: Cannot read property 'filter' of undefined
+skipping http://example.org/molecular_function: TypeError: Cannot read property 'expressions' of undefined
+skipping http://example.org/symptom: TypeError: Cannot read property 'filter' of undefined
+skipping http://example.org/taxon: TypeError: Cannot read property 'filter' of undefined
+[
+  {
+    "version": 1,
+    "__name": "active_site",
+    "entities": [
+      {
+        "id": 0,
+        "type": "item",
+        "properties": [
+          {
+            "id": 1,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q423026",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 2,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "__name": "anatomical_structure",
+    "entities": [
+      {
+        "id": 3,
+        "type": "item",
+        "properties": [
+          {
+            "id": 4,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q4936952",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 5,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "__name": "binding_site",
+    "entities": [
+      {
+        "id": 6,
+        "type": "item",
+        "properties": [
+          {
+            "id": 7,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q616005",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 8,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "__name": "biological_pathway",
+    "entities": [
+      {
+        "id": 9,
+        "type": "item",
+        "properties": [
+          {
+            "id": 10,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q4915012",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 11,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  [],
+  {
+    "version": 1,
+    "__name": "chemical_compound",
+    "entities": [
+      {
+        "id": 12,
+        "type": "item",
+        "properties": [
+          {
+            "id": 13,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q11173",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 14,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  [],
+  {
+    "version": 1,
+    "__name": "disease",
+    "entities": [
+      {
+        "id": 15,
+        "type": "item",
+        "properties": [
+          {
+            "id": 16,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q12136",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 17,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "__name": "gene",
+    "entities": [
+      {
+        "id": 18,
+        "type": "item",
+        "properties": [
+          {
+            "id": 19,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q7187",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 20,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  [],
+  {
+    "version": 1,
+    "__name": "medication",
+    "entities": [
+      {
+        "id": 21,
+        "type": "item",
+        "properties": [
+          {
+            "id": 22,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q12140",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 23,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  [],
+  {
+    "version": 1,
+    "__name": "pharmaceutical_product",
+    "entities": [
+      {
+        "id": 24,
+        "type": "item",
+        "properties": [
+          {
+            "id": 25,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q28885102",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 26,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "__name": "pharmacologic_action",
+    "entities": [
+      {
+        "id": 27,
+        "type": "item",
+        "properties": [
+          {
+            "id": 28,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q50377224",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 29,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "__name": "protein_domain",
+    "entities": [
+      {
+        "id": 30,
+        "type": "item",
+        "properties": [
+          {
+            "id": 31,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q898273",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 32,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "__name": "protein_family",
+    "entities": [
+      {
+        "id": 33,
+        "type": "item",
+        "properties": [
+          {
+            "id": 34,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q417841",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 35,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "__name": "protein",
+    "entities": [
+      {
+        "id": 36,
+        "type": "item",
+        "properties": [
+          {
+            "id": 37,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q8054",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 38,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "__name": "ribosomal_RNA",
+    "entities": [
+      {
+        "id": 39,
+        "type": "item",
+        "properties": [
+          {
+            "id": 40,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q28885102",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 41,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "__name": "sequence_variant",
+    "entities": [
+      {
+        "id": 42,
+        "type": "item",
+        "properties": [
+          {
+            "id": 43,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q15304597",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 44,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "__name": "supersecondary_structure",
+    "entities": [
+      {
+        "id": 45,
+        "type": "item",
+        "properties": [
+          {
+            "id": 46,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q7644128",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 47,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  },
+  [],
+  [],
+  {
+    "version": 1,
+    "__name": "therapeutic_use",
+    "entities": [
+      {
+        "id": 48,
+        "type": "item",
+        "properties": [
+          {
+            "id": 49,
+            "type": "entityid",
+            "rank": "all",
+            "value": "Q50379781",
+            "property": ""
+          }
+        ]
+      }
+    ],
+    "meta": true,
+    "aliases": true,
+    "sitelinks": true,
+    "descriptions": true,
+    "labels": true,
+    "statements": [
+      {
+        "id": 50,
+        "qualifiers": false,
+        "simple": true,
+        "rank": "all",
+        "full": false,
+        "references": false
+      }
+    ]
+  }
+]
+```
+
+# 13/Nov/2020
+
+This is the final day. We started looking at the slides/report
+
+Andra said he has been creating a Wikibase instance to allocate the subset and raises the concern that uploading the RDF dump through Wikibase API can be slow. It would be more efficient to directly upload it through Blazegraph or GraphDB.
+
+THis is the current target wikibase running on gcloud: http://35.205.156.230:8181/
+
+and the incomplete on wbstack: https://bh20subset1.wiki.opencura.com/wiki/Main_Page
+
+Ammar also tried ShapeDesigner (ShEx java implementation) and it hanged on the same place (same entity) that have a blank node and the query was actually having the blank node as subject and it was trying to fetch everything from Wikidata.
+
+So basically until this moment: all available implementations of ShEx slurpers (JavaScript "shex.js" /Python "PyShEx" / Java "ShapeDesigner") do not have a workaround for this, so maybe it should be dealt with in the future to make it feasible for Wikidata ShEx slurping.
+
+
+# Future plans
+
+- Meeting to finish the Chemistry Entity schema, Denise, Seyed joining ShEx CG 
+- Join next virtual SWAT4HCLS hackathon to continue working on this
+- Continue working on handling slurper with blank nodes and solve issue with ShEx working on SPARQL endpoints
+- Eric: Experimental "slurper" which, instead of querying the SPARQL endpoint, gets data from the .ttl files for the queried entity. 
+
+- WDumper??
+    - Add feature about graph traversing?
+    - Review and run the JSON config files that were generated (Seyed/Eric)
+    - Local installation of WDumper (Seyed)
+- Wikidata Subsetting Language?? (JSON)
+    - Seyed
+- ShEx hackathon/hands-on event every 2 weeks
+
+# Chemistry entity schema draft
+
+
+
+```turtle
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd:   <http://www.wikidata.org/entity/>
+PREFIX wdt:  <http://www.wikidata.org/prop/direct/>
+prefix :     <http://example.org/>
+import ....
+
+
+:chemicalsOrSubClassOf {
+    wdt:P31 
+}
+
+# wdt:P279 = rdfs:subClassOf
+# wdt:P31 = rdf:type
+# wdt:P527 = has part
+# wd:Q11173 = Chemical Compound
+
+/* ShEx language ideas:
+
+Discriminator { wdt:P31/wdt:P279* [wd:Q11173] } 
+... 
+
+IF { wdt:P31/wdt:P279* [wd:Q11173]} THEN {
+  ...
+}
+
+NOT { } OR { ....}
+
+*/
+
+:chemical {
+  # discriminator 
+  #  wdt:P31/wdt:P279* [ wd:Q11173 ]
+
+  ^wdt:P527 @:biological_process * ; # only get checmicals part of a biological_prrocess
+  ^wdt:P527 . * ; # get all
+  
+  wdt:P3771 . * ; # activator_of 
+  wdt:P129  . * ; # physically interacts with 
+  wdt:P2868 . * ; # subject has role 
+  wdt:P361  . * ; # part of 
+  wdt:P703  . * ; # found in taxon 
+  
+  wdt:P231  . ? ; # CAS registry number
+  wdt:P661  . ? ; # ChemSpider ID 
+  # ...
+  wdt:P6889 . * ; # MassBank accession number
+  # ...
+  
+   
+#    p:P31 { ps:P31 [ wd:Q11173 ] }
+}
+
+
+:biological_process EXTRA wdt:P527 {
+  wdt:P527  @:chemical OR .      * ; 
+  ^wdt:P527 @:biological_pathway *  
+}
+
+:biological_pathway {
+  wdt:P527 @:biological_process  
+}
+
+
+:medication {
+  
+}
+
 
 
 [![hackmd-github-sync-badge](https://hackmd.io/5nKOyk8qQTO5DSCa_M5p3g/badge)](https://hackmd.io/5nKOyk8qQTO5DSCa_M5p3g)
