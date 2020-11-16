@@ -2,6 +2,7 @@
 
 - [Use cases](https://hackmd.io/5nKOyk8qQTO5DSCa_M5p3g#Use-cases)
 - [Technical approach](https://hackmd.io/5nKOyk8qQTO5DSCa_M5p3g#Use-cases)
+- [Introduction to ShEx/Entity Schemas Video](https://www.youtube.com/watch?v=gnEaa9zHSos&list=PLweO8RYcVPDN1Px5GM6SbyIytfzoe0Gwj&index=2)
 - []()
 - [Future plans](https://hackmd.io/5nKOyk8qQTO5DSCa_M5p3g#Future-plans)
 
