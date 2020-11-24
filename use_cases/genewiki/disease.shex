@@ -9,5 +9,5 @@ prefix :    <http://example.org/>
 start=@:disease
 
 :disease {
-  p:P699 { ps:P699 xsd:string+ ; prov:wasDerivedFrom {pr:P248 [wd:Q34029365]} ;}
+  p:P699 { ps:P699 xsd:string+ ; prov:wasDerivedFrom {pr:P248 [wd:Q5282129]} ;}
 } 
