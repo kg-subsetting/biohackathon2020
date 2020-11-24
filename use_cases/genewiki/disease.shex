@@ -1,6 +1,7 @@
 PREFIX wd: <http://www.wikidata.org/entity/>
 PREFIX p: <http://www.wikidata.org/prop/>
 PREFIX ps: <http://www.wikidata.org/prop/statement/>
+prefix pr: <http://www.wikidata.org/prop/reference/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 prefix :    <http://example.org/>
@@ -8,5 +9,5 @@ prefix :    <http://example.org/>
 start=@:disease
 
 :disease {
-	p:P699 { ps:P699 xsd:string+ ; prov:wasDerivedFrom . ;}
+  p:P699 { ps:P699 xsd:string+ ; prov:wasDerivedFrom {pr:P248 [wd:Q34029365]} ;}
 } 
