@@ -6,5 +6,5 @@ prefix :    <http://example.org/>
 start=@:disease
 
 :disease {
-	p:P699 { ps:P699 xsd:string+ ; prov:wasDerivedFrom .}
+	p:P699 { ps:P699 xsd:string ; prov:wasDerivedFrom .}
 } 
