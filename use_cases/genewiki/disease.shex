@@ -1,0 +1,10 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix :    <http://example.org/>
+
+start=@:disease
+
+:disease {
+	wdt:P699 xsd:string ;
+} 
