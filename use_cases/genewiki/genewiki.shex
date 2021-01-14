@@ -2,7 +2,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX wd: <http://www.wikidata.org/entity/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-prefix :    <http://example.org/>
+PREFIX :    <http://example.org/>
 
 :active_site EXTRA wdt:P31 {
   wdt:P31  [ wd:Q423026 ]      ;
@@ -28,7 +28,10 @@ prefix :    <http://example.org/>
   wdt:P527 @:gene * ; 
 }
 
-:biological_process {}
+
+:biological_process {
+  # TODO: Mising links here
+}
 
 :chemical_compound EXTRA wdt:P31 {
   wdt:P31  [ wd:Q11173 ] ;
@@ -88,7 +91,8 @@ prefix :    <http://example.org/>
   wdt:P279  @:therapeutic_use * ;
 }
 
-:molecular_function {}
+:molecular_function {
+}
 
 :pharmaceutical_product EXTRA wdt:P31 {
   wdt:P31  [ wd:Q28885102 ] ;
