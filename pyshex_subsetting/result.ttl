@@ -1,0 +1,1244 @@
+@prefix ns1: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ns2: <http://wikiba.se/ontology#> .
+@prefix ns3: <http://www.wikidata.org/prop/> .
+@prefix ns4: <http://schema.org/> .
+@prefix ns5: <http://www.wikidata.org/prop/direct-normalized/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+wd:Q12135 rdfs:label "Afiechyd meddwl",
+        "Cheng-sîn-pēⁿ",
+        "Diperensya ha panhunahuna",
+        "Duševna bolest",
+        "Duševna motnja",
+        "Enfermedá mental",
+        "Enfermidade mental",
+        "Geestesteuring",
+        "Geðsjúkdómur",
+        "Itaala'aanta maskaxda",
+        "Kaosê Mezgi",
+        "Kpaŋ kʊdɔŋ",
+        "Maladia psicolojial",
+        "Malautiá mentala",
+        "Malautía mental",
+        "Matéria",
+        "Meelehaigus",
+        "Mental disaada",
+        "Morbus mentis",
+        "Neamhoird mheabhracha",
+        "Penyakit kejiwaan",
+        "Psichikos sutrikimas",
+        "Psikėkas sotrėkėms",
+        "Psîkopatî",
+        "Psüühika- ja käitumishäired",
+        "Ruhiy kasallik",
+        "Sakit sa pag-iisip",
+        "Sìng-gĭng-bâng",
+        "Ugonjwa wa akili",
+        "Waq'ayay",
+        "boală mentală",
+        "brægenseocnes",
+        "buruko gaitz",
+        "disturbo mentale",
+        "duševna bolest",
+        "duševná porucha",
+        "duševní porucha",
+        "garīga slimība",
+        "mental bozukluk",
+        "mental disorder",
+        "mentális zavar",
+        "penyakit mental",
+        "perturbação mental",
+        "psika malsano",
+        "psychische Störung",
+        "psychische aandoening",
+        "psykisk lidelse",
+        "psykisk liding",
+        "psykisk störning",
+        "psykisk sygdom",
+        "psyykkinen häiriö",
+        "ruhi xəstəlik",
+        "rối loạn tâm thần",
+        "trastorn mental",
+        "trastorno mental",
+        "trouble mental",
+        "zaburzenia psychiczne",
+        "ψυχική ασθένεια",
+        "Бемориҳои рӯҳӣ",
+        "Психик ҡаҡшау",
+        "Психикалык оорулар",
+        "Психикалық ширығу",
+        "Психично разстройство",
+        "Психічні захворювання",
+        "Псіхічны разлад",
+        "душевна болест",
+        "песихик бозылыш",
+        "психическое расстройство",
+        "псыхічны разлад",
+        "հոգեկան հիվանդություն",
+        "הפרעה נפשית",
+        "מח-קרענק",
+        "اضطراب عقلی",
+        "اضطراب نفسي",
+        "بیماری روانی",
+        "ذہنی توازن وگڑنا",
+        "پەشێویی دەروونی",
+        "मानसिक रोग",
+        "मानसिक ल्वय्",
+        "मानसिकरोगः",
+        "মানসিক বিসংগতি",
+        "মানসিক ব্যাধি",
+        "ਮਨੋਵਿਕਾਰ",
+        "ମାନସିକ ରୋଗ",
+        "உளப் பிறழ்ச்சி",
+        "మానసిక రుగ్మత",
+        "ಮಾನಸಿಕ ರೋಗಗಳು",
+        "മാനസികരോഗം",
+        "මානසික අක් රමතා",
+        "ความผิดปกติทางจิต",
+        "ფსიქიკური დაავადება",
+        "រោគ សរសៃ ប្រសាទ",
+        "心理疾患",
+        "精神疾患",
+        "精神障礙",
+        "정신 질환" ;
+    ns4:dateModified "2020-11-03T16:36:28+00:00"^^xsd:dateTime ;
+    ns4:description "Anormalidade, sofrimento ou comprometimento da ordem psicológica e/ou mental",
+        "affezione che colpisce il pensiero, i sentimenti o il comportamento di una persona",
+        "alteración de los procesos cognitivos y afectivos del desarrollo",
+        "behavioral or mental pattern that causes significant distress or impairment of personal functioning",
+        "erhebliche krankhafte Abweichung von der Norm im Erleben oder Verhalten",
+        "lidské onemocnění",
+        "mielen toiminnan poikkeama, joka aiheuttaa merkittävää kärsimystä ja toimintakyvyn laskua",
+        "ohälsa i psyket, det vill säga i personligheten, emotionerna eller kognitionen, vilka primärt har psykiska orsaker",
+        "označenie pre výrazný odklon od spôsobu vnímania a správania psychicky zdravého jedinca",
+        "psigiese aandoening",
+        "psihološki poremećaj ili anomalija",
+        "psychological pattern or anomaly",
+        "rahatsız edici düşünce ya da davranış modeli",
+        "trouble psychologique ou comportemental",
+        "wzorzec zachowania lub sposób myślenia, który powoduje znaczny dyskomfort lub pogorszenie funkcjonowania jednostki",
+        "μοτίβο σκέψης ή συμπεριφοράς, ή μια ανωμαλία η οποία προκαλεί πόνο ή και ανικανότητα, και η οποία δεν είναι αναπτυξιακά ή κοινωνικά καθορισμένη",
+        "Психик сирҙәр (менталь сирҙәр, психик ауырыу, йән ауырыуы;",
+        "психолошко пореметување",
+        "состояние психики, отличное от преобладающей нормы, включающее симптомы и признаки, которые обычно причиняют страдание",
+        "הפרעה נפשית",
+        "مرض نفسي يعتقد المصاب به ان هنالك احد يراقبه",
+        "അസ്വാഭാവികമായ ചിന്തകളോ പെരുമാറ്റമോ",
+        "同心理、神經有關嘅疾病",
+        "疾病",
+        "精神や行動における症状を呈することによって、機能的障害を伴っている状態" ;
+    ns4:version 1302195667 ;
+    ns2:identifiers 36 ;
+    ns2:sitelinks 105 ;
+    ns2:statements 79 ;
+    ns2:timestamp "2020-11-03T16:36:35+00:00"^^xsd:dateTime ;
+    ns1:altLabel "Gemütskrankheit",
+        "akıl bozukluğu",
+        "akıl hastalığı",
+        "choroby psychiatryczne",
+        "choroby psychiczne",
+        "choroby umysłowe",
+        "desorden mental",
+        "disease of mental health",
+        "disorder of mental process",
+        "disordine mentale",
+        "disturbi mentali",
+        "disturbo psichiatrico",
+        "disturbo psichico",
+        "distúrbio mental",
+        "duševní choroba",
+        "duševní nemoc",
+        "enfermedad mental",
+        "enfermedad psiquiatrica",
+        "enfermedad psiquiátrica",
+        "gangguan jiwa",
+        "gangguan mental",
+        "gangguan minda",
+        "maladie mentale",
+        "maladie psychiatrique",
+        "malaltia mental",
+        "malattia mentale",
+        "malattia psichiatrica",
+        "malattie mentali",
+        "malattie psichiatriche",
+        "mensa malordo",
+        "mensa malsano",
+        "mensa perturbo",
+        "mental disorders",
+        "mental dysfunction",
+        "mental hastalık",
+        "mental illness",
+        "mental liding",
+        "mental or behavioural disorder",
+        "mental ya da davranış bozukluğu",
+        "penyakit minda",
+        "psihička bolest",
+        "psika perturbo",
+        "psikiyatrik bozukluk",
+        "psikiyatrik hastalık",
+        "psychiatric condition",
+        "psychiatric disease",
+        "psychiatric disorder",
+        "psychická choroba",
+        "psychická nemoc",
+        "psychická porucha",
+        "psychische Erkrankung",
+        "psychische Erkrankungen",
+        "psychische Krankheit",
+        "psykiatrisk liding",
+        "ruhsal bozukluk",
+        "sakit jiwa",
+        "sakit minda",
+        "seelische Behinderung",
+        "seelische Krankheit",
+        "seelische Störung",
+        "sinnsliding",
+        "transtorno mental",
+        "trastorno psiquiatrico",
+        "trastorno psiquiátrico",
+        "zaburzenia psychiatryczne",
+        "Божевілля",
+        "Күңел сире",
+        "Психічний розлад",
+        "Психічні розлади",
+        "душевно пореметување",
+        "душевно растројство",
+        "душевное заболевание",
+        "душевное расстройство",
+        "ментална болест",
+        "ментални поремећај",
+        "ментално пореметување",
+        "ментално растројство",
+        "ментальное расстройство",
+        "нервни поремећај",
+        "нервно растројство",
+        "психиатрическое расстройство",
+        "психическая болезнь",
+        "психическая дисфункция",
+        "психическое заболевание",
+        "психическое или поведенческое расстройство",
+        "психички поремећај",
+        "психичко растројство",
+        "психолошка болест",
+        "расстройство психики",
+        "اضطراب عقلي",
+        "الأمراض العقلية",
+        "الاضطراب النفسي",
+        "الاضطرابات النفسية",
+        "المرض العقلي",
+        "مرض نفسي",
+        "ചിത്തഭ്രമം",
+        "മാനസിക രോഗം",
+        "മാനസിക വൈകല്യം",
+        "മാനസികാസ്വാസ്ഥ്യം",
+        "心理疾患",
+        "心理疾病",
+        "心理紊亂",
+        "心理障礙",
+        "精神異常",
+        "精神疾病",
+        "精神病",
+        "精神紊亂",
+        "精神錯亂",
+        "精神障礙症" ;
+    ns3:P1014 <http://www.wikidata.org/entity/statement/Q12135-820B9A9C-13D9-44A5-A802-1A6A372F4F42> ;
+    ns3:P1051 <http://www.wikidata.org/entity/statement/Q12135-90EF8470-2B5A-47D4-B9C5-C14D32F005A8> ;
+    ns3:P1296 <http://www.wikidata.org/entity/statement/Q12135-193D4239-E18C-481C-A1C1-9D12FDC61055> ;
+    ns3:P1343 <http://www.wikidata.org/entity/statement/Q12135-83f28510-3b3e-4f47-925b-60be5f7b522c>,
+        <http://www.wikidata.org/entity/statement/Q12135-84EDF737-087C-49ED-93E9-A927A63F2FEF>,
+        <http://www.wikidata.org/entity/statement/Q12135-e169a132-f9b8-400b-9e63-f013bd1502f6> ;
+    ns3:P1417 <http://www.wikidata.org/entity/statement/Q12135-B8F67DCC-83BD-4DFD-876B-31AA65EF06C6> ;
+    ns3:P1542 <http://www.wikidata.org/entity/statement/Q12135-cbe8d6b4-487a-340f-b52e-620be0722b7e> ;
+    ns3:P1692 <http://www.wikidata.org/entity/statement/Q12135-5EA6E026-77BB-4557-A311-D9E9282BE866>,
+        <http://www.wikidata.org/entity/statement/Q12135-68CE0CAC-AFD0-490A-B2F0-C5E352BF74EF>,
+        <http://www.wikidata.org/entity/statement/Q12135-D56ABDBE-76E8-4C54-A339-61CC84BD1B52> ;
+    ns3:P1709 <http://www.wikidata.org/entity/statement/Q12135-239A7FF8-318C-4148-A931-9AFAFD407A5E>,
+        <http://www.wikidata.org/entity/statement/Q12135-6BDD0C37-93B7-4A24-B941-6B91BA9218BD> ;
+    ns3:P1748 <http://www.wikidata.org/entity/statement/Q12135-3A4F4540-6A61-49C3-9E45-0344F16813F9>,
+        <http://www.wikidata.org/entity/statement/Q12135-47AEDAF6-B4A3-4D39-A26C-A832BCD7512A> ;
+    ns3:P18 <http://www.wikidata.org/entity/statement/Q12135-118b1db3-442a-dc6f-0058-818d6ba24eea> ;
+    ns3:P1889 <http://www.wikidata.org/entity/statement/Q12135-0890a66d-4989-a41d-6c3d-b70bf0528694> ;
+    ns3:P1963 <http://www.wikidata.org/entity/statement/Q12135-058DCBC4-053F-43C9-B9ED-E2600E1A607D> ;
+    ns3:P1995 <http://www.wikidata.org/entity/statement/Q12135-4caeb0b8-45fb-1ff3-ff86-4bbb1dcf9c04>,
+        <http://www.wikidata.org/entity/statement/Q12135-b6059356-417d-536b-217b-19a28273cb88> ;
+    ns3:P2176 <http://www.wikidata.org/entity/statement/Q12135-0F23240A-AAC3-419D-A66F-6CDD1C413995>,
+        <http://www.wikidata.org/entity/statement/Q12135-1CB842BF-D748-4C5A-81DB-318E9C0CAE25>,
+        <http://www.wikidata.org/entity/statement/Q12135-5669F4F7-1DF7-461A-8824-05CBAC1549E6>,
+        <http://www.wikidata.org/entity/statement/Q12135-8B0793BD-3897-4D7F-9858-18BD52AA23B5>,
+        <http://www.wikidata.org/entity/statement/Q12135-93E4CB47-243B-42F7-B33E-D21FFBFF8164>,
+        <http://www.wikidata.org/entity/statement/Q12135-9C9CAA57-AC75-47DF-A89E-EB399FEFCF3C>,
+        <http://www.wikidata.org/entity/statement/Q12135-A27CEF89-F375-4D62-BF91-3A917E917D33>,
+        <http://www.wikidata.org/entity/statement/Q12135-A9305E25-2AE7-41DA-9986-FD9EBD458774>,
+        <http://www.wikidata.org/entity/statement/Q12135-B72396BD-0093-405B-BB7B-13997A8594E5>,
+        <http://www.wikidata.org/entity/statement/Q12135-C8794553-EB1C-461E-9065-1DBD59EFFA60>,
+        <http://www.wikidata.org/entity/statement/Q12135-ECE40A7C-0E82-4D76-B2A4-EBDFC6905AE4>,
+        <http://www.wikidata.org/entity/statement/Q12135-FEB19ADE-12E5-4BC0-A8C1-E4789C80AD99> ;
+    ns3:P227 <http://www.wikidata.org/entity/statement/q12135-4ff989dd-47fa-14e9-1116-018c4bb49202> ;
+    ns3:P244 <http://www.wikidata.org/entity/statement/Q12135-D8B6EBED-AF4D-4008-B47E-54DBCF5A8ECD> ;
+    ns3:P2581 <http://www.wikidata.org/entity/statement/Q12135-FC5BEBE9-8899-4A23-8908-3751BA52A569> ;
+    ns3:P279 <http://www.wikidata.org/entity/statement/Q12135-09ad8697-4e33-3086-adc0-d05ca1725b18> ;
+    ns3:P2888 <http://www.wikidata.org/entity/statement/Q12135-2676FDBB-DD4F-420F-9975-0F4B0B7495B8>,
+        <http://www.wikidata.org/entity/statement/Q12135-350F011E-3EDE-47A6-855C-4ACAB9DF90E3>,
+        <http://www.wikidata.org/entity/statement/Q12135-503B67AD-7EEA-4F4B-8C5C-381BE4B76277> ;
+    ns3:P2892 <http://www.wikidata.org/entity/statement/Q12135-7A34FA7C-BD3E-44C3-8413-6A29F4FDD723>,
+        <http://www.wikidata.org/entity/statement/Q12135-8C115F97-7D62-47AD-9480-5CE942D5A098> ;
+    ns3:P31 <http://www.wikidata.org/entity/statement/Q12135-3F9AE78D-F2F1-4DD8-A6B2-B765EDF5D73E> ;
+    ns3:P3123 <http://www.wikidata.org/entity/statement/Q12135-38735FE0-FB94-44B9-B1CB-B51D0513EDBA>,
+        <http://www.wikidata.org/entity/statement/Q12135-C7627983-AA26-40FA-AF94-640E4A1AC3DC> ;
+    ns3:P3219 <http://www.wikidata.org/entity/statement/Q12135-F1CB2F2E-644B-47FA-A01A-61C979C368E2> ;
+    ns3:P3221 <http://www.wikidata.org/entity/statement/Q12135-2FD7B2A7-F91A-4266-897C-99889E497D73> ;
+    ns3:P3235 <http://www.wikidata.org/entity/statement/Q12135-9B57F2EF-06E6-48BF-BAC6-2F9B2A61D8D2> ;
+    ns3:P3417 <http://www.wikidata.org/entity/statement/Q12135-80FDCE11-8B34-4519-96D7-E5837063CD8B> ;
+    ns3:P373 <http://www.wikidata.org/entity/statement/q12135-76209D5F-6A6F-4258-B16C-7B494893D455> ;
+    ns3:P3827 <http://www.wikidata.org/entity/statement/Q12135-C2C18C1F-298C-49C9-9818-6E42DCBA1224> ;
+    ns3:P3916 <http://www.wikidata.org/entity/statement/Q12135-E86DEAE3-EB99-45EB-9807-028F2BA6857E> ;
+    ns3:P4229 <http://www.wikidata.org/entity/statement/Q12135-651BD972-84A7-4268-8E6F-E4FC39FC5C1C>,
+        <http://www.wikidata.org/entity/statement/Q12135-9995E3A4-BD94-4341-B248-F8562C7C5993>,
+        <http://www.wikidata.org/entity/statement/Q12135-B369266D-FCED-45C8-B6F6-E4A8A662AE8A> ;
+    ns3:P461 <http://www.wikidata.org/entity/statement/Q12135-70d9fa97-4803-e388-3ebd-8944380fd7f3> ;
+    ns3:P486 <http://www.wikidata.org/entity/statement/Q12135-40BF8559-7F6C-45FC-B291-8895AC9738D7> ;
+    ns3:P494 <http://www.wikidata.org/entity/statement/Q12135-f6e17c40-4150-bb03-75f5-b0ed68e2ed23> ;
+    ns3:P5008 <http://www.wikidata.org/entity/statement/Q12135-131A65B8-4378-4A10-9B6D-6B8C13EC4327>,
+        <http://www.wikidata.org/entity/statement/Q12135-F3FB3858-B9E8-4DB6-903F-0971DA99C587> ;
+    ns3:P508 <http://www.wikidata.org/entity/statement/q12135-8A003DB7-599F-40AD-B2AB-24193B8D1FA8> ;
+    ns3:P5198 <http://www.wikidata.org/entity/statement/Q12135-8A80FAFB-9875-4E5A-963A-DC221B76913C> ;
+    ns3:P5270 <http://www.wikidata.org/entity/statement/Q12135-36F84016-3807-41C9-A0DF-9EC8BB75DF76>,
+        <http://www.wikidata.org/entity/statement/Q12135-EE431A6A-05B8-45A6-8C36-14D573CC7876> ;
+    ns3:P557 <http://www.wikidata.org/entity/statement/Q12135-25884B93-F608-419F-8F73-76CCAE9FB4DB> ;
+    ns3:P6366 <http://www.wikidata.org/entity/statement/Q12135-FDE3E29F-BB85-41E4-87CD-26742FA93235> ;
+    ns3:P646 <http://www.wikidata.org/entity/statement/Q12135-EF11483E-93BF-4C90-86DB-E6B190B1D5DF> ;
+    ns3:P667 <http://www.wikidata.org/entity/statement/Q12135-2D4D385E-2E60-4785-B6F8-5F45788421CD> ;
+    ns3:P672 <http://www.wikidata.org/entity/statement/Q12135-707676cd-4ddb-9bf0-ca11-5b6aae3c3fec> ;
+    ns3:P6849 <http://www.wikidata.org/entity/statement/Q12135-02E1D095-E8DC-4190-906B-E68AE1E75796> ;
+    ns3:P699 <http://www.wikidata.org/entity/statement/Q12135-5251CD64-15DA-4CF5-8B26-D59859D32C5F>,
+        <http://www.wikidata.org/entity/statement/Q12135-DDD25A09-18BB-4D72-B8D7-092F80C079A8>,
+        <http://www.wikidata.org/entity/statement/Q12135-E689FAB7-C03E-4081-A2D4-B4EC25AC577B> ;
+    ns3:P7033 <http://www.wikidata.org/entity/statement/Q12135-83634034-61FF-4FDC-A3F1-B41BA424A18F> ;
+    ns3:P828 <http://www.wikidata.org/entity/statement/Q12135-68aef4a7-4544-a7f7-4106-aeeb9e36766a> ;
+    ns3:P8408 <http://www.wikidata.org/entity/statement/Q12135-858C47FA-47D2-4C42-9EF3-F5F7D6B471B6> ;
+    ns3:P910 <http://www.wikidata.org/entity/statement/Q12135-C4E93B0F-B380-4A43-A5DE-AAAA0EE01C23> ;
+    ns3:P924 <http://www.wikidata.org/entity/statement/Q12135-cc69b41f-4a5e-0076-b730-c3195fb6379b> ;
+    ns3:P948 <http://www.wikidata.org/entity/statement/Q12135-814DFA56-621E-4461-97F7-ECF483D3249D> ;
+    ns3:P989 <http://www.wikidata.org/entity/statement/Q12135-71990294-F9D9-4BE8-B123-65C1372DA9CD> ;
+    ns5:P1014 <http://vocab.getty.edu/aat/300055131> ;
+    ns5:P227 <http://d-nb.info/gnd/4047686-8> ;
+    ns5:P244 <https://id.loc.gov/authorities/names/sh85083643> ;
+    ns5:P2581 <http://babelnet.org/rdf/s00027818n> ;
+    ns5:P3916 <http://vocabularies.unesco.org/thesaurus/concept5463> ;
+    ns5:P486 <http://id.nlm.nih.gov/mesh/D001523> ;
+    ns5:P508 <http://purl.org/bncf/tid/6114> ;
+    ns5:P6366 <http://ma-graph.org/entity/2780875785> ;
+    ns5:P646 <http://g.co/kg/m/04x4r> ;
+    ns5:P672 <http://id.nlm.nih.gov/mesh/F03> ;
+    ns5:P7033 <http://vocabulary.curriculum.edu.au/scot/4979.rdf> ;
+    wdt:P1014 "300055131" ;
+    wdt:P1051 "12879" ;
+    wdt:P1296 "0193785" ;
+    wdt:P1343 wd:Q2657718,
+        wd:Q602358 ;
+    wdt:P1417 "science/mental-disorder" ;
+    wdt:P1542 wd:Q944142 ;
+    wdt:P1692 "290-299.99",
+        "298.8",
+        "V11.9" ;
+    wdt:P1748 "C2893" ;
+    wdt:P18 <http://commons.wikimedia.org/wiki/Special:FilePath/Gautier%20-%20Salpetriere.JPG> ;
+    wdt:P1889 wd:Q7101840 ;
+    wdt:P1963 wd:P663 ;
+    wdt:P1995 wd:Q199906,
+        wd:Q7867 ;
+    wdt:P2176 wd:Q201872,
+        wd:Q221361,
+        wd:Q251347,
+        wd:Q407617,
+        wd:Q408535,
+        wd:Q409672,
+        wd:Q410346,
+        wd:Q411188,
+        wd:Q411932,
+        wd:Q412443,
+        wd:Q422244,
+        wd:Q423292 ;
+    wdt:P227 "4047686-8" ;
+    wdt:P244 "sh85083643" ;
+    wdt:P2581 "00027818n" ;
+    wdt:P279 wd:Q12136 ;
+    wdt:P2888 <http://identifiers.org/doid/DOID:150>,
+        <http://purl.obolibrary.org/obo/DOID_0050329>,
+        <http://purl.obolibrary.org/obo/DOID_150> ;
+    wdt:P2892 "C0004936",
+        "C0029516" ;
+    wdt:P31 wd:Q12136 ;
+    wdt:P3123 "mental-disorder",
+        "mental-illness" ;
+    wdt:P3219 "maladies-mentales" ;
+    wdt:P3221 "subject/mental-health-and-disorders" ;
+    wdt:P3235 "mental-illness" ;
+    wdt:P3417 "Mental-Illness" ;
+    wdt:P373 "Mental and behavioural diseases and disorders" ;
+    wdt:P3827 "psychiatric-diagnosis" ;
+    wdt:P3916 "concept5463" ;
+    wdt:P4229 "F00.F99",
+        "F99",
+        "F99-F99" ;
+    wdt:P461 wd:Q317309 ;
+    wdt:P486 "D001523" ;
+    wdt:P494 "F00-F99" ;
+    wdt:P5008 wd:Q4099686,
+        wd:Q5460604 ;
+    wdt:P508 "6114" ;
+    wdt:P5198 "294925260" ;
+    wdt:P5270 "MONDO:0002025",
+        "MONDO:0005084" ;
+    wdt:P557 "28852" ;
+    wdt:P6366 "2780875785" ;
+    wdt:P646 "/m/04x4r" ;
+    wdt:P667 "P99" ;
+    wdt:P672 "F03" ;
+    wdt:P6849 "psykiske-lidelser" ;
+    wdt:P699 "DOID:0050329",
+        "DOID:150" ;
+    wdt:P7033 "scot/4979" ;
+    wdt:P828 wd:Q5054620 ;
+    wdt:P8408 "PsychologicalAilment" ;
+    wdt:P910 wd:Q6902639 ;
+    wdt:P924 wd:Q183257 ;
+    wdt:P948 <http://commons.wikimedia.org/wiki/Special:FilePath/Starry%20night%20banner.jpg> ;
+    wdt:P989 <http://commons.wikimedia.org/wiki/Special:FilePath/Mental%20illness.ogg> .
+
+wd:Q16495 rdfs:label "Riedel's fibrosing thyroiditis",
+        "Riedel-Struma",
+        "Tireoidite de Riedel",
+        "Tiroiditis de Riedel",
+        "Zapalenie gruczołu tarczowego Riedla",
+        "thyroïdite de Riedel",
+        "tiroidite di Riedel",
+        "Θυρεοειδίτιδα Ρίντελ",
+        "Ридел тириядиты",
+        "Тиреоидит Риделя",
+        "التهاب الدرقية المنسوب لريدل" ;
+    ns4:dateModified "2020-10-29T17:41:25+00:00"^^xsd:dateTime ;
+    ns4:description "Schilddrüsenentzündung",
+        "enfermedad de las tiroides",
+        "maladie rare",
+        "malattia infiammatoria cronica della tiroide, presumibilmente di origine autoimmune",
+        "thyroid disease",
+        "болезнь" ;
+    ns4:version 1299479660 ;
+    ns2:identifiers 13 ;
+    ns2:sitelinks 8 ;
+    ns2:statements 22 ;
+    ns2:timestamp "2020-10-29T17:41:35+00:00"^^xsd:dateTime ;
+    ns1:altLabel "Eisenharte Struma",
+        "Riedel disease",
+        "Riedel fibrosing thyroiditis",
+        "Riedel thyroiditis",
+        "Riedel's struma",
+        "Riedel's thyroiditis" ;
+    ns3:P138 <http://www.wikidata.org/entity/statement/Q16495-09c0743a-4c79-b54e-9aba-ac5cef530806> ;
+    ns3:P1417 <http://www.wikidata.org/entity/statement/Q16495-D87DAEC5-EF79-4253-B23D-B8827AF9BC13> ;
+    ns3:P1550 <http://www.wikidata.org/entity/statement/Q16495-18BC875D-6F6A-4717-AFCD-63BC19789657> ;
+    ns3:P1748 <http://www.wikidata.org/entity/statement/Q16495-6A205BEC-7D57-4693-95DC-024C51EFE84B> ;
+    ns3:P1995 <http://www.wikidata.org/entity/statement/Q16495-82F5AB4F-9BF7-4418-82F4-7160F5DE7A74> ;
+    ns3:P279 <http://www.wikidata.org/entity/statement/Q16495-FFC24865-86D9-47D2-A9F2-9A421139952F> ;
+    ns3:P2888 <http://www.wikidata.org/entity/statement/Q16495-43D786B3-3536-4344-B3A8-6B8477E7973A>,
+        <http://www.wikidata.org/entity/statement/Q16495-745656D7-C770-4B56-9B39-1989749261F5>,
+        <http://www.wikidata.org/entity/statement/Q16495-CDA1E5F6-763A-4B90-9B47-58600178E0BB> ;
+    ns3:P2892 <http://www.wikidata.org/entity/statement/Q16495-45F8B743-6C6E-41AF-A964-FBE7827E28A3>,
+        <http://www.wikidata.org/entity/statement/Q16495-A56E4FB2-1D84-4FF7-BB7F-61509083F087> ;
+    ns3:P31 <http://www.wikidata.org/entity/statement/Q16495-1B32DEC1-CCB5-4CDC-8F34-DBAFE407E96F> ;
+    ns3:P4229 <http://www.wikidata.org/entity/statement/Q16495-357A07B7-0DEB-4193-9E16-BC2EBB0E8534> ;
+    ns3:P493 <http://www.wikidata.org/entity/statement/q16495-4E477F82-7542-491C-896C-DCD876DF3FC2> ;
+    ns3:P494 <http://www.wikidata.org/entity/statement/q16495-D1FC0544-4C35-484A-83EB-1B4B7B9DBF24> ;
+    ns3:P5008 <http://www.wikidata.org/entity/statement/Q16495-1648B68B-3655-41AA-BE12-4CC5C12039C4> ;
+    ns3:P5270 <http://www.wikidata.org/entity/statement/Q16495-5F48DE27-2059-4C7F-95A9-59D4AE731935> ;
+    ns3:P557 <http://www.wikidata.org/entity/statement/q16495-3055022A-AA60-4897-8447-8A9832B41D05> ;
+    ns3:P6366 <http://www.wikidata.org/entity/statement/Q16495-6EDBB411-B8C2-4028-9491-ECA5F589C865> ;
+    ns3:P646 <http://www.wikidata.org/entity/statement/Q16495-DF1766EE-C319-4DC2-B397-4701C1099733> ;
+    ns3:P673 <http://www.wikidata.org/entity/statement/q16495-9C4DC051-BB7C-4F9D-AB73-A00C32F62AF9> ;
+    ns3:P699 <http://www.wikidata.org/entity/statement/Q16495-A40D0BF5-8EE0-48EF-A699-70DFB5A7ECC3> ;
+    ns5:P6366 <http://ma-graph.org/entity/2776547070> ;
+    ns5:P646 <http://g.co/kg/m/02rjq7r> ;
+    wdt:P138 wd:Q70915 ;
+    wdt:P1417 "science/Riedel-thyroiditis" ;
+    wdt:P1550 "64744" ;
+    wdt:P1748 "C35827" ;
+    wdt:P1995 wd:Q162606 ;
+    wdt:P279 wd:Q11835644 ;
+    wdt:P2888 <http://identifiers.org/doid/DOID:14351>,
+        <http://purl.obolibrary.org/obo/DOID_14351>,
+        <http://www.orpha.net/ORDO/Orphanet_64744> ;
+    wdt:P2892 "C0154162" ;
+    wdt:P31 wd:Q12136 ;
+    wdt:P4229 "E06.5" ;
+    wdt:P493 "245.3" ;
+    wdt:P494 "E06.5" ;
+    wdt:P5008 wd:Q4099686 ;
+    wdt:P5270 "MONDO:0018992" ;
+    wdt:P557 "11590" ;
+    wdt:P6366 "2776547070" ;
+    wdt:P646 "/m/02rjq7r" ;
+    wdt:P673 "125243" ;
+    wdt:P699 "DOID:14351" .
+
+wd:Q8277 rdfs:label "Encephalomyelitis disseminata",
+        "Esclerose múltipla",
+        "Esclerose múltiple",
+        "Esclerosis múltiple",
+        "Izkaisītā skleroze",
+        "Išsėtinė sklerozė",
+        "MS",
+        "MS-tauti",
+        "Multiipelskleroos",
+        "Multipel Sklerose",
+        "Multipla skleroza",
+        "Multiple Sklerose",
+        "Multiple sclerosis",
+        "Multiple skleroza",
+        "Sclerose multiple",
+        "Sclerosis multiplex",
+        "Scleroză multiplă",
+        "Scléaróis iolrach",
+        "Sglerosis ymledol",
+        "Sklerosis berbilang",
+        "Sklerosisi ya sehemu nyingi",
+        "Skleroza enîfireh",
+        "Skleróza multiplex",
+        "Veelvuldige sklerose",
+        "Xơ cứng rải rác",
+        "dağınıq skleroz",
+        "esclerose múltipla",
+        "esclerosi múltiple",
+        "esclerosis múltiple",
+        "escleròsi multipla",
+        "esklerosi anizkoitz",
+        "multipel skleros",
+        "multipel sklerose",
+        "multipl skleroz",
+        "multipla skleroza",
+        "multiple sclerose",
+        "multiple sclerosis",
+        "multippel sklerose",
+        "multloka sklerozo",
+        "roztroušená skleróza",
+        "sclerosi multipla",
+        "sclérose en plaques",
+        "sklerosis multipel",
+        "stwardnienie rozsiane",
+        "Πολλαπλή σκλήρυνση",
+        "Множествена склероза",
+        "Мултиплекс склероза",
+        "Рассеянный склероз",
+        "Розсіяний склероз",
+        "мултипла склероза",
+        "таркау эсклируз",
+        "Ցրված սկլերոզ",
+        "טרשת נפוצה",
+        "ئێم ئێس",
+        "اسکلروز چندگانه",
+        "تصلب متعدد",
+        "बहुसृत काठिन्य",
+        "मल्टिपल स्क्लेरॉसिस",
+        "মাল্টিপল স্ক্লেরোসিস",
+        "ମଲ୍ଟିପ୍ଲସ୍କ୍ଲେରୋସିସ",
+        "தண்டுவட மரப்பு நோய்",
+        "మల్టిపుల్ స్ల్కిరోసిస్ (ఎం.ఎస్)",
+        "മൾട്ടിപ്പിൾ സ്ക്ലീറോസിസ്",
+        "โรคมัลติเพิล สเกลอโรซิส",
+        "多发性硬化症",
+        "多発性硬化症",
+        "多發性硬化症",
+        "다발성 경화증" ;
+    ns4:dateModified "2020-09-24T23:12:51+00:00"^^xsd:dateTime ;
+    ns4:description "Doença desmielinizante em que são danificadas as bainhas de mielina à volta dos axónios do cérebro e a medula espinal, provocando desmielinização.",
+        "Sygdom der rammer nervecellerne",
+        "autoimmune Krankheit, Entmarkungserkrankung des zentralen Nervensystems",
+        "autoimunitní onemocnění centrální nervové soustavy",
+        "bolest demijelinizacije",
+        "chronické ochorenie centrálnej nervovej sústavy",
+        "demyeliniserande sjukdom i sentralnervesystemet",
+        "disease that damages the myelin sheaths around nerve axons",
+        "enfermedad",
+        "keskushermoston tulehdussairaus",
+        "maladie auto-immune dégénérative (dérégulation de l'immunité, inflammation et dégénérescence des nerfs)",
+        "malattia cronica autoimmune demielinizzante",
+        "przewlekła choroba ośrodkowego układu nerwowego",
+        "sjukdom som skadar myelinskidorna som omger nervaxoner",
+        "ziekte van het zenuwstelsel",
+        "φλεγμονώδης ασθένεια",
+        "Поражение миелиновых оболочек нервных волокон с образованием бляшек",
+        "מחלה",
+        "التهاب ينتج عن تلف الغشاء العازل للعصبونات في الدماغ والحبل الشوكي. يُعطّل هذا التلف قدرةَ أجزاءٍ من الجهاز العصبي على التواصل.",
+        "یک بیماری خودایمنی",
+        "एक रोग जिसमें मस्तिष्क तथा सुषुम्ना रज्जु शोथ के चारों ओर वसायुक्त माइलिन के आवरण क्षतिग्रस्त हो जाते हैं, जिससे माइलिन के आवरण नष्ट होने और घाव के निशान होने के साथ-साथ रोग के संकेत और लक्षणों के स्थूल क्रम उत्पन्न होते हैं",
+        "একধরনের ডি-মায়েলিনেটিং মানব ব্যাধি যাতে মানব মস্তিষ্কে ও স্নায়ুরজ্জুতে বিদ্যমান স্নায়ুকোষগুলোকে আচ্ছাদনকারী অন্তরক আবরণ ক্ষতিগ্রস্ত হয়ে যায়",
+        "疾病",
+        "뇌와 척수의 축삭 주변의 지방성 말이집을 감싸는 부분이 손상을 입어서 탈수질환과 흉터형성으로 이어지는 염증 질환이다." ;
+    ns4:version 1281823418 ;
+    ns2:identifiers 46 ;
+    ns2:sitelinks 70 ;
+    ns2:statements 171 ;
+    ns2:timestamp "2020-09-24T23:13:00+00:00"^^xsd:dateTime ;
+    ns1:altLabel "ED",
+        "EM",
+        "Encephalomyelitis disseminata",
+        "Esclerose disseminada",
+        "Esclerose em placas",
+        "Generalized multiple sclerosis (disorder)",
+        "M.S.",
+        "MS",
+        "Multiple sclerosis",
+        "Multiple sclerosis; MS",
+        "Multippel sklerose",
+        "SEP",
+        "SM",
+        "disseminated sclerosis",
+        "dissemineret sklerose",
+        "disseminert sklerose",
+        "encephalomyelitis disseminata",
+        "esclerosi en plaques",
+        "esclerosis multiple",
+        "generalised multiple sclerosis",
+        "generalized multiple sclerosis",
+        "insular sclerosis",
+        "keskushermoston pesäkekovettumatauti",
+        "multipla",
+        "multiple sclerosis",
+        "multippeliskleroosi",
+        "polisclerosi",
+        "sclerosi a placche",
+        "sclerosi disseminata",
+        "sclerosis disseminata",
+        "σκλήρυνση κατά πλάκας , διάχυτη εγκεφαλομυελίτιδα",
+        "التصلب اللويحي",
+        "التصلب اللويحي و العلاج الوظيفي",
+        "التصلب المتعدد",
+        "التصلب المنتثر",
+        "التهاب الدماغ",
+        "النخاع المنتثر",
+        "تصلب لويحي",
+        "تصلب لويحي متعدد",
+        "تصلب منتثر" ;
+    ns3:P1051 <http://www.wikidata.org/entity/statement/Q8277-1EABF1A3-ED59-4D92-BC7C-99A84524614B> ;
+    ns3:P1193 <http://www.wikidata.org/entity/statement/Q8277-790fdabd-4b5d-3957-bbae-176b87f8cb4d>,
+        <http://www.wikidata.org/entity/statement/Q8277-ee8f598c-47f9-0c65-282e-83f9f539857e> ;
+    ns3:P1245 <http://www.wikidata.org/entity/statement/Q8277-6D0042E1-73AD-48EE-A35C-2E5A648F11FE> ;
+    ns3:P1325 <http://www.wikidata.org/entity/statement/Q8277-F5D789D9-B507-4E45-A58E-896A505EEEDE> ;
+    ns3:P1343 <http://www.wikidata.org/entity/statement/Q8277-FC60B662-2AD8-4402-BF0B-1027F370DC4E> ;
+    ns3:P1417 <http://www.wikidata.org/entity/statement/Q8277-5C49973D-4487-405D-B408-A11DF6DE603E> ;
+    ns3:P1461 <http://www.wikidata.org/entity/statement/Q8277-5E615F21-0837-486A-860A-DB94C2D93A85> ;
+    ns3:P1692 <http://www.wikidata.org/entity/statement/Q8277-8302D6E8-62FD-4F22-8C36-C96B63D99A33> ;
+    ns3:P1748 <http://www.wikidata.org/entity/statement/Q8277-FDE0912A-3785-4638-9B3E-E0677E4FB765> ;
+    ns3:P18 <http://www.wikidata.org/entity/statement/Q8277-4D7AABA4-F61E-4DB7-AFAA-ECF8F1158AD0> ;
+    ns3:P1889 <http://www.wikidata.org/entity/statement/Q8277-031998A6-4305-4CC7-B451-62264EAAB19D> ;
+    ns3:P1995 <http://www.wikidata.org/entity/statement/Q8277-41B6192F-567E-4617-8A17-AADE0A4ECE6A> ;
+    ns3:P2176 <http://www.wikidata.org/entity/statement/Q8277-0349884D-9A67-46E2-AEBB-E10A6F1D4A80>,
+        <http://www.wikidata.org/entity/statement/Q8277-0825F67F-53D5-471B-9D47-580BC996C5FF>,
+        <http://www.wikidata.org/entity/statement/Q8277-0FCA9F26-D3CD-4142-8F72-B482B29BA51B>,
+        <http://www.wikidata.org/entity/statement/Q8277-105AAB45-2E11-4ADC-B3C1-085B9237BC9F>,
+        <http://www.wikidata.org/entity/statement/Q8277-1CD3AA55-D03D-4385-9AE3-69391933DE0F>,
+        <http://www.wikidata.org/entity/statement/Q8277-1F2804F3-A2C0-413C-AC64-888713C076AC>,
+        <http://www.wikidata.org/entity/statement/Q8277-2551981D-92D1-4A91-97D2-11751CFF6F7D>,
+        <http://www.wikidata.org/entity/statement/Q8277-39AAA176-0833-4B75-9DBE-7351D2F75F11>,
+        <http://www.wikidata.org/entity/statement/Q8277-4C6ECA03-C961-4A7B-9B06-0A21AE8C925D>,
+        <http://www.wikidata.org/entity/statement/Q8277-5240AD2D-0DEA-4237-8164-2BB6F547B5DE>,
+        <http://www.wikidata.org/entity/statement/Q8277-55E335D2-0BFA-4637-A1C6-FA4F08498695>,
+        <http://www.wikidata.org/entity/statement/Q8277-583C6609-04E5-442D-89F7-63C2E90C5F67>,
+        <http://www.wikidata.org/entity/statement/Q8277-59A91916-539A-4C3C-BBD2-8F73C762CC09>,
+        <http://www.wikidata.org/entity/statement/Q8277-65879F77-824D-4C97-8E6F-A5F06E7EE8B3>,
+        <http://www.wikidata.org/entity/statement/Q8277-6A2A490A-7A6D-4228-959A-4309134A3793>,
+        <http://www.wikidata.org/entity/statement/Q8277-72FA9AD7-F097-43AE-8A61-42C063FC0B7F>,
+        <http://www.wikidata.org/entity/statement/Q8277-85C463E9-E189-47D0-8DF7-F5E10581E3DE>,
+        <http://www.wikidata.org/entity/statement/Q8277-860F9B0D-8721-40CD-BDE2-02561822D1D1>,
+        <http://www.wikidata.org/entity/statement/Q8277-868D7A13-BFF4-497B-9084-896DEE75ABFE>,
+        <http://www.wikidata.org/entity/statement/Q8277-8992C8F2-BA1B-4B41-BDEE-CCFD08C7FE94>,
+        <http://www.wikidata.org/entity/statement/Q8277-9BCBD2D4-6B7F-4EB8-AEFD-47D05730E50E>,
+        <http://www.wikidata.org/entity/statement/Q8277-A87163D9-41DC-4726-9915-78B753F9A16B>,
+        <http://www.wikidata.org/entity/statement/Q8277-AA6FEE1B-5DF2-4D01-BB44-B14859285521>,
+        <http://www.wikidata.org/entity/statement/Q8277-B25916C4-DF98-491F-845A-791B788A207A>,
+        <http://www.wikidata.org/entity/statement/Q8277-B9DA173B-860E-4DCB-99DF-6E6065CB2E7F>,
+        <http://www.wikidata.org/entity/statement/Q8277-BC062116-03F2-4533-A821-D867C94C6F7E>,
+        <http://www.wikidata.org/entity/statement/Q8277-DCA58156-3BB9-4B43-8B8D-C461A32B54D9>,
+        <http://www.wikidata.org/entity/statement/Q8277-E232E26C-5D91-48FD-834A-E9F5E0FE2119>,
+        <http://www.wikidata.org/entity/statement/Q8277-F4511B6A-B3B4-4980-A071-85129FC148ED>,
+        <http://www.wikidata.org/entity/statement/Q8277-FF9198E1-ED61-402F-8410-2D5EFF7419BB> ;
+    ns3:P227 <http://www.wikidata.org/entity/statement/Q8277-D02B9B83-3DB2-4839-A193-A8BAAA7DC748> ;
+    ns3:P2293 <http://www.wikidata.org/entity/statement/Q8277-016E2D7B-EFB9-4E81-8C5F-BC902881DEFC>,
+        <http://www.wikidata.org/entity/statement/Q8277-044B6DD8-1F79-400F-96F1-6AC3622808DE>,
+        <http://www.wikidata.org/entity/statement/Q8277-09BB2894-FB46-43A1-A158-9B08C184766A>,
+        <http://www.wikidata.org/entity/statement/Q8277-0BB045E1-DDB0-446D-B630-D6966E0A95C9>,
+        <http://www.wikidata.org/entity/statement/Q8277-0DA9404A-894C-4EAA-B3B4-6D59303D2AFB>,
+        <http://www.wikidata.org/entity/statement/Q8277-0EF8CC73-51EE-4A1A-9551-6182BCEB5649>,
+        <http://www.wikidata.org/entity/statement/Q8277-106655A2-76C3-412D-941C-11D62D8BF669>,
+        <http://www.wikidata.org/entity/statement/Q8277-1129CE6D-E1C0-4667-B3B8-FC96E13150E6>,
+        <http://www.wikidata.org/entity/statement/Q8277-140E74EE-252C-4554-BFF5-38B82A5B0B44>,
+        <http://www.wikidata.org/entity/statement/Q8277-14295753-E63C-4832-A47B-6EF98FD7EF06>,
+        <http://www.wikidata.org/entity/statement/Q8277-1BEB6FC5-5C74-4636-9D2D-8FE79DB605FD>,
+        <http://www.wikidata.org/entity/statement/Q8277-24317C5C-22AB-4FED-BAF3-8F210A6F45C0>,
+        <http://www.wikidata.org/entity/statement/Q8277-2436E592-470F-4A59-B11A-D819DBA9CD4E>,
+        <http://www.wikidata.org/entity/statement/Q8277-29B4D0B1-F749-4671-B6CE-CD2BDF2A2977>,
+        <http://www.wikidata.org/entity/statement/Q8277-2A411F3B-B8C6-46BD-9CD8-EC7038C68812>,
+        <http://www.wikidata.org/entity/statement/Q8277-2CCD252A-7785-4B28-99D7-3AEF54288495>,
+        <http://www.wikidata.org/entity/statement/Q8277-2D718791-92FB-4168-AA04-65F786A6625A>,
+        <http://www.wikidata.org/entity/statement/Q8277-31EEB485-9AC9-405C-AACE-89895894CBF5>,
+        <http://www.wikidata.org/entity/statement/Q8277-32897AFD-3CE8-4094-B4B1-D97A4A763E4F>,
+        <http://www.wikidata.org/entity/statement/Q8277-33AA9411-F933-4DD0-8778-8AC769CCE62B>,
+        <http://www.wikidata.org/entity/statement/Q8277-35BEE650-ACA6-4477-A343-3EB6F26BA76A>,
+        <http://www.wikidata.org/entity/statement/Q8277-37F9D88C-910E-4949-91D3-1F820E7FB2AC>,
+        <http://www.wikidata.org/entity/statement/Q8277-3AC2B42F-144A-4514-A782-AED62186410B>,
+        <http://www.wikidata.org/entity/statement/Q8277-44490AAC-17B9-4A84-8AA3-5799B76ED15C>,
+        <http://www.wikidata.org/entity/statement/Q8277-457FA542-6BC6-4D1C-9018-4124387B3AD3>,
+        <http://www.wikidata.org/entity/statement/Q8277-4B876EC6-8653-4052-9C64-D63C0B0F795E>,
+        <http://www.wikidata.org/entity/statement/Q8277-5035645B-EF5D-4F87-9339-ADFA6B357AD5>,
+        <http://www.wikidata.org/entity/statement/Q8277-53D3A0B0-2A17-4B16-8A92-77C76AD925B0>,
+        <http://www.wikidata.org/entity/statement/Q8277-56D1CEA1-D8D0-4DEB-A43F-6042E5018B2A>,
+        <http://www.wikidata.org/entity/statement/Q8277-5F725E5E-1AE0-4471-B7DE-647D6C1F0D80>,
+        <http://www.wikidata.org/entity/statement/Q8277-61471832-0B59-45A3-B1B6-9B1A67CE7578>,
+        <http://www.wikidata.org/entity/statement/Q8277-6401B524-0806-488B-B415-FBEE97687F3D>,
+        <http://www.wikidata.org/entity/statement/Q8277-6438C128-9B12-41BA-A2AE-766A0FBA2F72>,
+        <http://www.wikidata.org/entity/statement/Q8277-6552E4DE-B992-4914-A075-02F20872624E>,
+        <http://www.wikidata.org/entity/statement/Q8277-69056260-5122-4C1B-BB40-0F4CF5E477BA>,
+        <http://www.wikidata.org/entity/statement/Q8277-699B2E76-3B65-477B-B23C-4AC745BA1EE1>,
+        <http://www.wikidata.org/entity/statement/Q8277-6A036768-8ABA-402C-B6CB-382A3C7500D8>,
+        <http://www.wikidata.org/entity/statement/Q8277-6AF64217-77F4-4BB7-A8D3-1FE99A2BC366>,
+        <http://www.wikidata.org/entity/statement/Q8277-771E89BF-C620-46D8-8D24-75B5AD4CDB56>,
+        <http://www.wikidata.org/entity/statement/Q8277-7E43562C-FDE1-41C5-A23A-DECBE7FB78D7>,
+        <http://www.wikidata.org/entity/statement/Q8277-84456949-21C3-47CA-8DD0-77E23F18C193>,
+        <http://www.wikidata.org/entity/statement/Q8277-87AD28CC-CBFA-420C-AC34-5F6F797B58D8>,
+        <http://www.wikidata.org/entity/statement/Q8277-8A7D6C58-A480-42C2-9473-DF5C979E1B27>,
+        <http://www.wikidata.org/entity/statement/Q8277-8E946F8D-2028-4896-89F6-841DE143DCDB>,
+        <http://www.wikidata.org/entity/statement/Q8277-8FA14F9E-D488-46CC-8405-25286324B333>,
+        <http://www.wikidata.org/entity/statement/Q8277-90393192-9CB8-428C-AAED-31DF161F5131>,
+        <http://www.wikidata.org/entity/statement/Q8277-920C2032-EBED-4CA9-9C94-F1B0D398FDAE>,
+        <http://www.wikidata.org/entity/statement/Q8277-9BEDA829-D762-476E-977D-CD369678EC6D>,
+        <http://www.wikidata.org/entity/statement/Q8277-A69B2A6D-CCB1-4E79-A359-48FB98798C46>,
+        <http://www.wikidata.org/entity/statement/Q8277-AB5C6DBB-9BD0-46A6-8161-AF947ED2EE7E>,
+        <http://www.wikidata.org/entity/statement/Q8277-AF9E88AF-BAEE-4A40-8BF0-58B7F7105EDF>,
+        <http://www.wikidata.org/entity/statement/Q8277-B02EC499-1CE9-439F-BB9E-54A8091478C8>,
+        <http://www.wikidata.org/entity/statement/Q8277-BA49FE3C-1282-4DC4-A6BD-0E0ABA1173B0>,
+        <http://www.wikidata.org/entity/statement/Q8277-BA9EC6BA-FBDE-43FF-8BC5-B15DEFC6C487>,
+        <http://www.wikidata.org/entity/statement/Q8277-BF67D3AB-2681-4414-A571-DBF0D662101C>,
+        <http://www.wikidata.org/entity/statement/Q8277-C53FBDC6-BC2C-43C6-A028-1EC1092147A0>,
+        <http://www.wikidata.org/entity/statement/Q8277-C85CC88D-297B-4970-985F-484D45DDE750>,
+        <http://www.wikidata.org/entity/statement/Q8277-CB78F7AF-0F1E-435D-BF50-F0F7FFFDE7FA>,
+        <http://www.wikidata.org/entity/statement/Q8277-CD87FAFE-B187-4A41-9740-62BB0AE00BCF>,
+        <http://www.wikidata.org/entity/statement/Q8277-D219540B-E72C-4C6D-84EE-38C7D35B5A12>,
+        <http://www.wikidata.org/entity/statement/Q8277-D4A0B944-223E-420F-A280-5434EF0F91E6>,
+        <http://www.wikidata.org/entity/statement/Q8277-DB80D979-60EB-450F-97FC-9193EE247E09>,
+        <http://www.wikidata.org/entity/statement/Q8277-E503BD3D-A951-4089-857D-FCBA94A1E3E0>,
+        <http://www.wikidata.org/entity/statement/Q8277-E77067F7-46B1-4379-BEE9-0FCA4FC0B2E5>,
+        <http://www.wikidata.org/entity/statement/Q8277-EBDA2A10-8539-4FAF-9C2A-A670F5A94322>,
+        <http://www.wikidata.org/entity/statement/Q8277-F904E791-3694-4055-A191-EAB7D210E090>,
+        <http://www.wikidata.org/entity/statement/Q8277-FA0F0A38-0A16-4A1F-A16C-E9759F1C4CB1>,
+        <http://www.wikidata.org/entity/statement/Q8277-FADD343E-4F00-4D87-A134-1A69D9D2C03C> ;
+    ns3:P2347 <http://www.wikidata.org/entity/statement/Q8277-33000F1A-B33D-4ECB-8708-83FEBC82122A> ;
+    ns3:P268 <http://www.wikidata.org/entity/statement/Q8277-bcbaba94-4a2b-3c62-112e-f3c98e33790c> ;
+    ns3:P279 <http://www.wikidata.org/entity/statement/Q8277-2F929C3B-F64D-4A58-85FF-BDCA7ADABCB1>,
+        <http://www.wikidata.org/entity/statement/Q8277-345a1dd1-4665-1986-7bac-409f9d9991a9>,
+        <http://www.wikidata.org/entity/statement/Q8277-B90FD873-2590-4F53-ABE5-C16761151125> ;
+    ns3:P2888 <http://www.wikidata.org/entity/statement/Q8277-5DF65E3F-A99A-42A9-B6C4-94E2794CF480>,
+        <http://www.wikidata.org/entity/statement/Q8277-F72B1D4B-192E-4A6A-BD98-3D7DCDA3852C>,
+        <http://www.wikidata.org/entity/statement/Q8277-cc381fc4-4990-972e-45d9-b765aa38526e> ;
+    ns3:P2892 <http://www.wikidata.org/entity/statement/Q8277-62068A35-7507-4D97-BBF0-67A81DB6F67B> ;
+    ns3:P31 <http://www.wikidata.org/entity/statement/Q8277-04A1D4C5-B311-4E55-854A-AEB765CD0B60>,
+        <http://www.wikidata.org/entity/statement/Q8277-433E2373-6439-48C2-A370-0A26DCDBD288> ;
+    ns3:P3219 <http://www.wikidata.org/entity/statement/Q8277-20553ce2-4799-7cac-cc97-eeaf70d1a395> ;
+    ns3:P3222 <http://www.wikidata.org/entity/statement/Q8277-9D25DBCE-B66A-44EF-9E7F-6AD51454F066> ;
+    ns3:P3417 <http://www.wikidata.org/entity/statement/Q8277-2F02A7C9-3FB8-4BCD-A289-70F7A6F460A7>,
+        <http://www.wikidata.org/entity/statement/Q8277-7F359506-0A1A-4EBF-9ABC-D134029CB995> ;
+    ns3:P3471 <http://www.wikidata.org/entity/statement/Q8277-2180F4CB-5C74-4681-ACCE-B7349EE03F66> ;
+    ns3:P349 <http://www.wikidata.org/entity/statement/Q8277-9D861C08-4543-4528-9888-FEF41F8D9218> ;
+    ns3:P373 <http://www.wikidata.org/entity/statement/q8277-8A114F12-B0F2-417C-9BD3-95B3421D85CC> ;
+    ns3:P3827 <http://www.wikidata.org/entity/statement/Q8277-3DE9A76A-2C67-4DF5-88EF-0F9AE2D08353>,
+        <http://www.wikidata.org/entity/statement/Q8277-5945CCE3-0BF3-469C-844C-130D0A04824D> ;
+    ns3:P4223 <http://www.wikidata.org/entity/statement/Q8277-709fa95f-4e4c-4eb0-1203-166a23868b0c> ;
+    ns3:P4229 <http://www.wikidata.org/entity/statement/Q8277-745BA194-2E62-4125-A301-658ADB852872> ;
+    ns3:P4317 <http://www.wikidata.org/entity/statement/Q8277-A63E8ED4-5FAD-42CB-ABEA-69D42DE8F191> ;
+    ns3:P4527 <http://www.wikidata.org/entity/statement/Q8277-9CD52D37-E37D-4566-AADA-B744F2D1DBA7> ;
+    ns3:P486 <http://www.wikidata.org/entity/statement/Q8277-4827042B-62C8-4CF0-B700-14BFA0B2499B> ;
+    ns3:P492 <http://www.wikidata.org/entity/statement/Q8277-351A9828-AED9-4EC1-A079-2655EEB53676>,
+        <http://www.wikidata.org/entity/statement/Q8277-3BCB8D55-94EE-43E6-B68C-2CDF5C2EB978>,
+        <http://www.wikidata.org/entity/statement/Q8277-3E60EF48-E0FA-4EAD-9B4F-8ED39E9FDA0A>,
+        <http://www.wikidata.org/entity/statement/Q8277-62CF6D20-E7C0-4894-ADAC-899B829D1351>,
+        <http://www.wikidata.org/entity/statement/Q8277-67494F45-5FCF-4BFC-9E26-D223DCDB6868> ;
+    ns3:P5008 <http://www.wikidata.org/entity/statement/Q8277-C3F814A3-46DB-45D5-A6C1-54DB1E2F7C51> ;
+    ns3:P508 <http://www.wikidata.org/entity/statement/q8277-51CA5FB1-6B37-45D7-91CB-9F36957E08B9> ;
+    ns3:P5082 <http://www.wikidata.org/entity/statement/Q8277-C632CC78-D67D-4926-A429-12EDEB92E727> ;
+    ns3:P5160 <http://www.wikidata.org/entity/statement/Q8277-3AD56BE1-D764-4864-BACD-8BFE64313612> ;
+    ns3:P5270 <http://www.wikidata.org/entity/statement/Q8277-B4A1ABAF-982A-4B4B-B78D-DF4E7E0E841D> ;
+    ns3:P5395 <http://www.wikidata.org/entity/statement/Q8277-B5BA4D64-5AD5-458C-9C07-68FFA71B6B71> ;
+    ns3:P557 <http://www.wikidata.org/entity/statement/q8277-6EC0CD14-B62F-46D2-9FAE-60ED02C2F2E5> ;
+    ns3:P604 <http://www.wikidata.org/entity/statement/q8277-19FBF0C2-9D7D-4B99-B5A3-071E7FFA413D> ;
+    ns3:P61 <http://www.wikidata.org/entity/statement/q8277-17abde55-417d-1daa-9f97-8845d10b2b3f> ;
+    ns3:P6366 <http://www.wikidata.org/entity/statement/Q8277-2B460F68-1D28-461B-8E82-283CB2FCEC9A> ;
+    ns3:P646 <http://www.wikidata.org/entity/statement/Q8277-B283FF4F-C4D8-4552-AE84-949EF9212AF0> ;
+    ns3:P667 <http://www.wikidata.org/entity/statement/Q8277-6473896E-418C-4E9C-A0AF-AB0795A07195> ;
+    ns3:P668 <http://www.wikidata.org/entity/statement/q8277-a3fd0d11-4ea0-6a8f-b137-521d316a47ea> ;
+    ns3:P672 <http://www.wikidata.org/entity/statement/Q8277-2EB22124-CFCA-453C-8EF0-EAF070ECB92D>,
+        <http://www.wikidata.org/entity/statement/Q8277-AC33BD66-F9AC-4234-958F-42295CA01F79>,
+        <http://www.wikidata.org/entity/statement/Q8277-C7212015-D3F8-454A-B95D-902FC577F1CB> ;
+    ns3:P673 <http://www.wikidata.org/entity/statement/q8277-842494BE-9161-45B3-B3A4-4DA59113B170>,
+        <http://www.wikidata.org/entity/statement/q8277-939D6476-E055-4EF3-AC72-F11FC85D2131>,
+        <http://www.wikidata.org/entity/statement/q8277-EEF3C0DE-E8CE-4840-B27A-117052249A1F> ;
+    ns3:P699 <http://www.wikidata.org/entity/statement/Q8277-8FFD0FA3-98F9-4D46-B3F2-E0CAE3C9C0BB> ;
+    ns3:P7033 <http://www.wikidata.org/entity/statement/Q8277-AC6E3C60-FE11-462E-90FC-6858972A40F1> ;
+    ns3:P7464 <http://www.wikidata.org/entity/statement/Q8277-B1BB39E9-94B8-4FE8-BBAA-85EE0DAE4A6F> ;
+    ns3:P780 <http://www.wikidata.org/entity/statement/Q8277-a1877263-49db-3fde-4340-10c6315e2dd8> ;
+    ns3:P7995 <http://www.wikidata.org/entity/statement/Q8277-850B7F0A-60DC-4658-910C-E7C39642DEE0> ;
+    ns3:P8408 <http://www.wikidata.org/entity/statement/Q8277-71388126-64C1-4E67-B7C7-65C721E66A75> ;
+    ns3:P910 <http://www.wikidata.org/entity/statement/Q8277-8C11CC7E-192B-4C8A-8C79-F72C124BA1FE> ;
+    ns3:P923 <http://www.wikidata.org/entity/statement/Q8277-2453d25c-4f59-9e07-cb4c-ec89998fb89d>,
+        <http://www.wikidata.org/entity/statement/Q8277-9a1a35ab-48e1-b5f2-f718-0da1056b5744>,
+        <http://www.wikidata.org/entity/statement/Q8277-f8b594bd-473f-8539-1564-48387991eec4> ;
+    ns5:P227 <http://d-nb.info/gnd/4040693-3> ;
+    ns5:P2347 <http://www.yso.fi/onto/yso/p4226> ;
+    ns5:P268 <http://data.bnf.fr/ark:/12148/cb119384088#about> ;
+    ns5:P349 <http://id.ndl.go.jp/auth/ndlna/00572494> ;
+    ns5:P486 <http://id.nlm.nih.gov/mesh/D009103> ;
+    ns5:P508 <http://purl.org/bncf/tid/25174> ;
+    ns5:P6366 <http://ma-graph.org/entity/2909989903> ;
+    ns5:P646 <http://g.co/kg/m/0dcqh> ;
+    ns5:P672 <http://id.nlm.nih.gov/mesh/C10.114.375.500>,
+        <http://id.nlm.nih.gov/mesh/C10.314.350.500>,
+        <http://id.nlm.nih.gov/mesh/C20.111.258.250.500> ;
+    ns5:P7033 <http://vocabulary.curriculum.edu.au/scot/11303.rdf> ;
+    wdt:P1051 "13793" ;
+    wdt:P1193 0.00032 ;
+    wdt:P1245 "1036110" ;
+    wdt:P1325 <http://www.nanbyou.or.jp/entry/3806> ;
+    wdt:P1343 wd:Q2657718 ;
+    wdt:P1417 "science/multiple-sclerosis" ;
+    wdt:P1461 "multiple-sclerosis-pro" ;
+    wdt:P1692 "340" ;
+    wdt:P1748 "C3243" ;
+    wdt:P18 <http://commons.wikimedia.org/wiki/Special:FilePath/MS%20Demyelinisation%20CD68%2010xv2.jpg> ;
+    wdt:P1889 wd:Q140067 ;
+    wdt:P1995 wd:Q83042 ;
+    wdt:P2176 wd:Q1851162,
+        wd:Q185690,
+        wd:Q18939,
+        wd:Q239426,
+        wd:Q2450337,
+        wd:Q252251,
+        wd:Q27087639,
+        wd:Q2858961,
+        wd:Q3077133,
+        wd:Q372539,
+        wd:Q386119,
+        wd:Q408524,
+        wd:Q410352,
+        wd:Q410441,
+        wd:Q412174,
+        wd:Q412323,
+        wd:Q412920,
+        wd:Q413717,
+        wd:Q414030,
+        wd:Q416132,
+        wd:Q417222,
+        wd:Q418123,
+        wd:Q418913,
+        wd:Q420164,
+        wd:Q421274,
+        wd:Q425137,
+        wd:Q73972 ;
+    wdt:P227 "4040693-3" ;
+    wdt:P2293 wd:Q14875866,
+        wd:Q14877422,
+        wd:Q14904874,
+        wd:Q14906072,
+        wd:Q14907337,
+        wd:Q14907527,
+        wd:Q14911988,
+        wd:Q14912019,
+        wd:Q15317730,
+        wd:Q17853452,
+        wd:Q17856033,
+        wd:Q17858168,
+        wd:Q17859685,
+        wd:Q17912224,
+        wd:Q17928811,
+        wd:Q18027819,
+        wd:Q18027842,
+        wd:Q18029085,
+        wd:Q18031289,
+        wd:Q18031325,
+        wd:Q18032010,
+        wd:Q18032044,
+        wd:Q18032316,
+        wd:Q18032408,
+        wd:Q18032619,
+        wd:Q18033284,
+        wd:Q18034988,
+        wd:Q18035112,
+        wd:Q18035255,
+        wd:Q18035403,
+        wd:Q18035466,
+        wd:Q18035550,
+        wd:Q18035589,
+        wd:Q18035923,
+        wd:Q18036441,
+        wd:Q18036720,
+        wd:Q18037015,
+        wd:Q18037055,
+        wd:Q18037089,
+        wd:Q18037844,
+        wd:Q18038635,
+        wd:Q18039725,
+        wd:Q18041269,
+        wd:Q18041829,
+        wd:Q18042141,
+        wd:Q18042335,
+        wd:Q18042957,
+        wd:Q18043118,
+        wd:Q18045009,
+        wd:Q18045327,
+        wd:Q18045550,
+        wd:Q18045682,
+        wd:Q18046775,
+        wd:Q18047766,
+        wd:Q18049153,
+        wd:Q18049169,
+        wd:Q18049296,
+        wd:Q18050866,
+        wd:Q18051065,
+        wd:Q18052462,
+        wd:Q18053305,
+        wd:Q18054463,
+        wd:Q18057719,
+        wd:Q18057962,
+        wd:Q24292611,
+        wd:Q414043,
+        wd:Q5007698,
+        wd:Q5573603 ;
+    wdt:P2347 "4226" ;
+    wdt:P268 "119384088" ;
+    wdt:P279 wd:Q1186703,
+        wd:Q18553585,
+        wd:Q19000726 ;
+    wdt:P2888 <http://id.nlm.nih.gov/mesh/D009103>,
+        <http://identifiers.org/doid/DOID:2377>,
+        <http://purl.obolibrary.org/obo/DOID_2377> ;
+    wdt:P2892 "C0026769" ;
+    wdt:P31 wd:Q12136,
+        wd:Q42303753 ;
+    wdt:P3219 "sclerose-en-plaques" ;
+    wdt:P3222 "multipel-skleros" ;
+    wdt:P3417 "Multiple-Sclerosis",
+        "Multiple-Sclerosis-MS" ;
+    wdt:P3471 "1953" ;
+    wdt:P349 "00572494" ;
+    wdt:P373 "Multiple sclerosis" ;
+    wdt:P3827 "multiple-sclerosis",
+        "relapsing-remitting-multiple-sclerosis" ;
+    wdt:P4223 "sclerosi" ;
+    wdt:P4229 "G35" ;
+    wdt:P4317 "10255" ;
+    wdt:P4527 "11769" ;
+    wdt:P486 "D009103" ;
+    wdt:P492 "126200",
+        "612594",
+        "612595",
+        "612596",
+        "614810" ;
+    wdt:P5008 wd:Q4099686 ;
+    wdt:P508 "25174" ;
+    wdt:P5082 "multippel_sklerose" ;
+    wdt:P5160 "tgm006888" ;
+    wdt:P5270 "MONDO:0005301" ;
+    wdt:P5395 "multiple-sclerosis" ;
+    wdt:P557 "8412" ;
+    wdt:P604 "000737" ;
+    wdt:P61 wd:Q20710 ;
+    wdt:P6366 "2909989903" ;
+    wdt:P646 "/m/0dcqh" ;
+    wdt:P667 "N86" ;
+    wdt:P668 "NBK1316" ;
+    wdt:P672 "C10.114.375.500",
+        "C10.314.350.500",
+        "C20.111.258.250.500" ;
+    wdt:P673 "1146199",
+        "1214270",
+        "342254" ;
+    wdt:P699 "DOID:2377" ;
+    wdt:P7033 "scot/11303" ;
+    wdt:P7464 "multiple-sclerosis" ;
+    wdt:P780 wd:Q58490835 ;
+    wdt:P7995 "multiple-sclerosis" ;
+    wdt:P8408 "MultipleSclerosis" ;
+    wdt:P910 wd:Q9518131 ;
+    wdt:P923 wd:Q161238,
+        wd:Q208376,
+        wd:Q719444 .
+
+wd:Q8285 rdfs:label "Bệnh nhược cơ",
+        "Miaistéine throm",
+        "Miastenia",
+        "Miastenia grave",
+        "Miastenia gravis",
+        "Miastenija gravis",
+        "Miasteniya",
+        "Miastenìa greva",
+        "Myastenia Gravis",
+        "Myasthenia Gravis",
+        "Myasthenia gravis",
+        "Sunkioji miastenija",
+        "Vöðvaslenfár",
+        "miastenia grave",
+        "miastenia gravis",
+        "miastenio grava",
+        "miastènia greu",
+        "myastenia gravis",
+        "myasthenia gravis",
+        "myasthénie",
+        "Ťažká myasténia",
+        "Μυασθένεια Gravis",
+        "Миастения",
+        "Миастения гравис",
+        "Мијастенија гравис",
+        "Міастенія",
+        "миастения",
+        "миястиния",
+        "Միասթենիա գրավիս",
+        "מיאסטניה גראביס",
+        "میاستنی گراویس",
+        "وهن عضلي وبيل",
+        "मियासथीनिया ग्रेविस",
+        "ମ୍ୟାସ୍ଥେନିଆ ଗ୍ରାଭିସ",
+        "தசைக் களைப்பு",
+        "మయస్థినియా గ్రావిస్",
+        "മൈസ്തീനിയ",
+        "โรคกล้ามเนื้ออ่อนแรงชนิดร้าย",
+        "მიასთენია",
+        "重症筋無力症",
+        "重症肌无力",
+        "重症肌無力",
+        "중증 근무력증" ;
+    ns4:dateModified "2020-10-12T14:16:22+00:00"^^xsd:dateTime ;
+    ns4:description "autoimmuunisairaus",
+        "enfermedad neuromuscular",
+        "human disease",
+        "maladie neuromusculaire auto-immune",
+        "malattia autoimmune neuromuscolare",
+        "muskelsjukdom som kännetecknas av svaghet i skelettmuskulatur",
+        "neurologische Autoimmunerkrankung",
+        "ανθρώπινη αρρώστια μυών",
+        "аутоимунное нервно-мышечное заболевание",
+        "аутоіммунне захворювання нерво-мязових тканин",
+        "مَرَضٌ بَشَرِيٌّ",
+        "ଦୀର୍ଘକାଳୀନ ସ୍ନାୟୁ-ମାଂସପେଶୀ ରୋଗ",
+        "アセチルコリンなどの抗体により神経・筋伝達が阻害されるために筋肉の易疲労性や脱力が起こる自己免疫疾患" ;
+    ns4:version 1290222072 ;
+    ns2:identifiers 34 ;
+    ns2:sitelinks 58 ;
+    ns2:statements 71 ;
+    ns2:timestamp "2020-10-12T14:16:26+00:00"^^xsd:dateTime ;
+    ns1:altLabel "Acquired myasthenia",
+        "Astenik Bulbar Falaj",
+        "Astenik bulbar falaj",
+        "Autoimmune myasthenia gravis",
+        "Erb-Goldflam Kasalligi",
+        "Erb-Goldflam kasalligi",
+        "MG",
+        "MYASTHENIA GRAVIS; MG",
+        "Myasthenia Gravis",
+        "Myasthenia gravis",
+        "Myasthenia gravis pseudoparalytica",
+        "Osserman-Kriterien",
+        "miastenia",
+        "miastenia grave",
+        "miastènia gravis",
+        "myasteni",
+        "myastenia gravis" ;
+    ns3:P1193 <http://www.wikidata.org/entity/statement/Q8285-9cb626a8-43b5-e15e-46fd-c6995700caaa> ;
+    ns3:P1325 <http://www.wikidata.org/entity/statement/Q8285-4E0D0F1D-3B87-44AF-AC22-BB6B4DD0CA11> ;
+    ns3:P1417 <http://www.wikidata.org/entity/statement/Q8285-B1D877F8-94D4-48D5-A193-85032A453EF2> ;
+    ns3:P1461 <http://www.wikidata.org/entity/statement/Q8285-9780E747-7079-4648-9599-D2D0BC3C6160> ;
+    ns3:P1550 <http://www.wikidata.org/entity/statement/Q8285-cab2e7ce-44b0-2e12-971f-65a1c414180f> ;
+    ns3:P1692 <http://www.wikidata.org/entity/statement/Q8285-2F480C82-5254-4AE0-BD4A-8DEC21BD4AF5>,
+        <http://www.wikidata.org/entity/statement/Q8285-483C6197-23B3-4147-9B54-3434878B4EFD> ;
+    ns3:P1748 <http://www.wikidata.org/entity/statement/Q8285-6701A92B-C7D0-4525-9DED-BDA37CD25115> ;
+    ns3:P18 <http://www.wikidata.org/entity/statement/Q8285-5ABBD391-D22F-462C-97AF-8CB3278D6684> ;
+    ns3:P1995 <http://www.wikidata.org/entity/statement/Q8285-A4287558-EDEA-4A6C-A6D4-FEBECD289718> ;
+    ns3:P2176 <http://www.wikidata.org/entity/statement/Q8285-203F4473-4216-4BDF-AF2F-40FC3F94FE1C>,
+        <http://www.wikidata.org/entity/statement/Q8285-2B45D0B7-0D02-4545-8741-E1B380394F0E>,
+        <http://www.wikidata.org/entity/statement/Q8285-2E7744BC-845E-40E0-ACBD-DA5AD6D46D0E>,
+        <http://www.wikidata.org/entity/statement/Q8285-32B0B069-C21F-4934-A01C-B7F863F002F5>,
+        <http://www.wikidata.org/entity/statement/Q8285-464E62CC-8593-475E-8259-5CECE9B07E5B>,
+        <http://www.wikidata.org/entity/statement/Q8285-4C091FAE-07D6-42B5-B17D-7564093BB0E1>,
+        <http://www.wikidata.org/entity/statement/Q8285-53359D6D-8F5B-45C4-83E0-E948097C6FEB>,
+        <http://www.wikidata.org/entity/statement/Q8285-5EF56591-5DA2-4B88-9C0D-1FA234B6F8F0>,
+        <http://www.wikidata.org/entity/statement/Q8285-66EE9EFB-620D-431D-AC51-36552926C747>,
+        <http://www.wikidata.org/entity/statement/Q8285-71E6F7AE-A7AF-43E4-B33D-7542565D9EF0>,
+        <http://www.wikidata.org/entity/statement/Q8285-9076B5CB-419D-4E81-8160-E4DAFAE82DB9>,
+        <http://www.wikidata.org/entity/statement/Q8285-B96648AC-70BA-47A0-B0AA-C513C5BB48C3>,
+        <http://www.wikidata.org/entity/statement/Q8285-BB4B0306-527E-4889-82C2-E18F6D5AFEE2> ;
+    ns3:P227 <http://www.wikidata.org/entity/statement/Q8285-B4947E35-A9B2-42CF-81E3-E586282DB35A> ;
+    ns3:P2293 <http://www.wikidata.org/entity/statement/Q8285-69C82108-9520-4B2D-8E25-8F3E5953C5CA>,
+        <http://www.wikidata.org/entity/statement/Q8285-d94a335e-4004-aab5-c6be-abacb456abb9> ;
+    ns3:P279 <http://www.wikidata.org/entity/statement/Q8285-4D777AFF-DE62-4354-B842-DA1BD12B7649>,
+        <http://www.wikidata.org/entity/statement/Q8285-5B0197F0-BE37-4D76-9B21-2D87D3063A1A>,
+        <http://www.wikidata.org/entity/statement/Q8285-6405713D-4553-49D4-AF8A-A6545C819D18>,
+        <http://www.wikidata.org/entity/statement/Q8285-AB592C87-BAAF-4194-BDEC-6729DED9A65B>,
+        <http://www.wikidata.org/entity/statement/Q8285-D080E30F-AFEF-4874-A3EB-76499D195266> ;
+    ns3:P2888 <http://www.wikidata.org/entity/statement/Q8285-2315A94E-59E4-4F83-9092-9894D09E25EE>,
+        <http://www.wikidata.org/entity/statement/Q8285-403F2EBC-943C-492B-9204-020F29470EEC>,
+        <http://www.wikidata.org/entity/statement/Q8285-F2090158-5F6C-492C-BCC7-AB06BBD8B23E> ;
+    ns3:P2892 <http://www.wikidata.org/entity/statement/Q8285-B8ECADA4-DF3E-4526-B510-8FA9D2D99169>,
+        <http://www.wikidata.org/entity/statement/Q8285-FE1C1E2C-E1AF-453E-A4F1-611FB3009758> ;
+    ns3:P2924 <http://www.wikidata.org/entity/statement/Q8285-98CF4B6B-8AF2-41E0-8751-FBCEE9CE72F2> ;
+    ns3:P31 <http://www.wikidata.org/entity/statement/Q8285-B661E065-8470-4730-813E-FB35FF6FA2B6>,
+        <http://www.wikidata.org/entity/statement/Q8285-C171765D-B54C-44BA-9F1A-92401A255140>,
+        <http://www.wikidata.org/entity/statement/Q8285-D7BE8971-1316-4C79-A59D-9551EF3DF1A3> ;
+    ns3:P3222 <http://www.wikidata.org/entity/statement/Q8285-30E94D9E-D52C-408A-833B-7B0AE68E84CA> ;
+    ns3:P3417 <http://www.wikidata.org/entity/statement/Q8285-3EA2E583-6910-478B-B144-9EA6BE340F8B> ;
+    ns3:P3471 <http://www.wikidata.org/entity/statement/Q8285-4A3BF539-637B-406C-9B0D-190E3DC650DC> ;
+    ns3:P373 <http://www.wikidata.org/entity/statement/Q8285-E276FE9E-B4CA-48CC-BFE6-4B58B31E8D75> ;
+    ns3:P3827 <http://www.wikidata.org/entity/statement/Q8285-3BD2550D-5243-485F-AB83-CF053632985B> ;
+    ns3:P4229 <http://www.wikidata.org/entity/statement/Q8285-70DF763A-6F62-4118-B6AE-FEA12363FE95>,
+        <http://www.wikidata.org/entity/statement/Q8285-83A0B16E-8002-4CAB-ABB2-AEEB5077360F> ;
+    ns3:P4317 <http://www.wikidata.org/entity/statement/Q8285-51245A02-5099-4111-931A-3BDB06AC3746> ;
+    ns3:P486 <http://www.wikidata.org/entity/statement/Q8285-D84741F3-7D47-49A5-9C69-D59CDEB2B685> ;
+    ns3:P492 <http://www.wikidata.org/entity/statement/Q8285-390AE83E-DD8F-4A9A-B28D-9DC4D54C4E27>,
+        <http://www.wikidata.org/entity/statement/Q8285-82617AB2-795D-43FF-8EE4-1C6C5EFC7532>,
+        <http://www.wikidata.org/entity/statement/Q8285-F367F9A2-B017-40DB-BB07-71A12094C144> ;
+    ns3:P5008 <http://www.wikidata.org/entity/statement/Q8285-9DFD9364-0581-4734-91B2-5B4CA5372544> ;
+    ns3:P508 <http://www.wikidata.org/entity/statement/q8285-4C3241B6-E537-4E7B-BE26-A528FF3A3DB7> ;
+    ns3:P5082 <http://www.wikidata.org/entity/statement/Q8285-5AB2E73B-812B-44F3-B091-B4B95C88FE7D> ;
+    ns3:P5270 <http://www.wikidata.org/entity/statement/Q8285-D30137C2-4254-414C-B1D6-C1B5E62267DB> ;
+    ns3:P557 <http://www.wikidata.org/entity/statement/q8285-E9AA4873-DB4A-4AE2-B4BF-6EF498091506> ;
+    ns3:P604 <http://www.wikidata.org/entity/statement/q8285-9d9303d0-44db-5320-111d-8c536dda2699> ;
+    ns3:P6366 <http://www.wikidata.org/entity/statement/Q8285-3CB84954-1E15-4FA3-924B-34F0F4630BF9> ;
+    ns3:P646 <http://www.wikidata.org/entity/statement/Q8285-87B38E55-5095-42B0-BEF8-EDEE9CED0A26> ;
+    ns3:P672 <http://www.wikidata.org/entity/statement/Q8285-40BF9B86-D68F-45DE-9CA3-071EFD5A6104>,
+        <http://www.wikidata.org/entity/statement/Q8285-E01F0F33-3278-4AAB-A43E-8E1C9EC10397>,
+        <http://www.wikidata.org/entity/statement/Q8285-EEBB3144-4137-436A-874A-CE0B2F5F3817> ;
+    ns3:P673 <http://www.wikidata.org/entity/statement/q8285-2E2CCCF3-DB60-4E2C-845F-79395E732669>,
+        <http://www.wikidata.org/entity/statement/q8285-7B7C10CE-4F90-457F-B187-2F690B373E1A>,
+        <http://www.wikidata.org/entity/statement/q8285-A698E454-8B24-425F-97D1-78AE10871B3B>,
+        <http://www.wikidata.org/entity/statement/q8285-B88148F4-EF64-42BA-944A-C5A5B2A312E7> ;
+    ns3:P699 <http://www.wikidata.org/entity/statement/Q8285-7735179B-C005-47F4-A19B-4CA0C081968A> ;
+    ns3:P7464 <http://www.wikidata.org/entity/statement/Q8285-D1F8F6B0-396C-4B3A-8167-AA169036DAD5> ;
+    ns3:P7995 <http://www.wikidata.org/entity/statement/Q8285-4D61DD10-96C4-4700-823F-A824FE31FF93> ;
+    ns3:P910 <http://www.wikidata.org/entity/statement/Q8285-42587E5C-70AD-4FDF-9849-2C179C338A68> ;
+    ns5:P227 <http://d-nb.info/gnd/4075144-2> ;
+    ns5:P486 <http://id.nlm.nih.gov/mesh/D009157> ;
+    ns5:P508 <http://purl.org/bncf/tid/46655> ;
+    ns5:P6366 <http://ma-graph.org/entity/2909017070> ;
+    ns5:P646 <http://g.co/kg/m/04st8> ;
+    ns5:P672 <http://id.nlm.nih.gov/mesh/C10.114.656>,
+        <http://id.nlm.nih.gov/mesh/C10.668.758.725>,
+        <http://id.nlm.nih.gov/mesh/C20.111.258.500> ;
+    wdt:P1193 0.00015 ;
+    wdt:P1325 <http://www.nanbyou.or.jp/entry/120> ;
+    wdt:P1417 "science/myasthenia-gravis" ;
+    wdt:P1461 "myasthenia-gravis-pro" ;
+    wdt:P1550 "589" ;
+    wdt:P1692 "358.0",
+        "358.00" ;
+    wdt:P1748 "C60989" ;
+    wdt:P18 <http://commons.wikimedia.org/wiki/Special:FilePath/Synapse%20diag3.png> ;
+    wdt:P1995 wd:Q83042 ;
+    wdt:P2176 wd:Q11426176,
+        wd:Q18939,
+        wd:Q27149809,
+        wd:Q367700,
+        wd:Q408524,
+        wd:Q410546,
+        wd:Q411648,
+        wd:Q412323,
+        wd:Q419472,
+        wd:Q421617,
+        wd:Q424972,
+        wd:Q4567614 ;
+    wdt:P227 "4075144-2" ;
+    wdt:P2293 wd:Q18035291,
+        wd:Q24598664 ;
+    wdt:P279 wd:Q18553609,
+        wd:Q18553610,
+        wd:Q3843811,
+        wd:Q55788305,
+        wd:Q7002430 ;
+    wdt:P2888 <http://identifiers.org/doid/DOID:437>,
+        <http://purl.obolibrary.org/obo/DOID_437>,
+        <http://www.orpha.net/ORDO/Orphanet_589> ;
+    wdt:P2892 "C0026896",
+        "C1260409" ;
+    wdt:P2924 "2211197" ;
+    wdt:P31 wd:Q12136,
+        wd:Q42303753 ;
+    wdt:P3222 "myasthenia-gravis" ;
+    wdt:P3417 "Myasthenia-Gravis" ;
+    wdt:P3471 "21270" ;
+    wdt:P373 "Myasthenia gravis" ;
+    wdt:P3827 "myasthenia-gravis" ;
+    wdt:P4229 "G70.0",
+        "G70.00" ;
+    wdt:P4317 "7122" ;
+    wdt:P486 "D009157" ;
+    wdt:P492 "159400",
+        "254200",
+        "607085" ;
+    wdt:P5008 wd:Q4099686 ;
+    wdt:P508 "46655" ;
+    wdt:P5082 "myasthenia_gravis" ;
+    wdt:P5270 "MONDO:0009688" ;
+    wdt:P557 "8460588" ;
+    wdt:P604 "000712" ;
+    wdt:P6366 "2909017070" ;
+    wdt:P646 "/m/04st8" ;
+    wdt:P672 "C10.114.656",
+        "C10.668.758.725",
+        "C20.111.258.500" ;
+    wdt:P673 "1171206",
+        "1216417",
+        "261815",
+        "793136" ;
+    wdt:P699 "DOID:437" ;
+    wdt:P7464 "myasthenia-gravis" ;
+    wdt:P7995 "myasthenia-gravis" ;
+    wdt:P910 wd:Q13334582 .
+
+wd:Q15978631 wdt:P31 wd:Q16521 .
+
+wd:Q169444 wdt:P31 wd:Q16521,
+        wd:Q213907 .
+
+wd:Q184224 wdt:P31 wd:Q16521,
+        wd:Q213907 .
+
+wd:Q58490835 wdt:P31 wd:Q7189713 .
+
+wd:Q83310 wdt:P31 wd:Q16521 .
+
+wd:Q18258792 wdt:P1057 wd:Q15305594 ;
+    wdt:P684 wd:Q18035291,
+        wd:Q24383504,
+        wd:Q29752181 ;
+    wdt:P688 wd:Q21992458 ;
+    wdt:P703 wd:Q83310 .
+
+wd:Q24383504 wdt:P1057 wd:Q21596737 ;
+    wdt:P684 wd:Q18035291,
+        wd:Q18258792,
+        wd:Q29752181 ;
+    wdt:P688 wd:Q29527342 ;
+    wdt:P703 wd:Q184224 .
+
+wd:Q29752181 wdt:P1057 wd:Q29566175 ;
+    wdt:P684 wd:Q18035291,
+        wd:Q18258792,
+        wd:Q24383504 ;
+    wdt:P688 wd:Q29825449 ;
+    wdt:P703 wd:Q169444 .
+
+wd:Q18035291 wdt:P1057 wd:Q840741 ;
+    wdt:P684 wd:Q18258792,
+        wd:Q24383504,
+        wd:Q29752181 ;
+    wdt:P688 wd:Q21116563,
+        wd:Q21143975 ;
+    wdt:P703 wd:Q15978631 .
+

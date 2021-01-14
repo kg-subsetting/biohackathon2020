@@ -4,6 +4,8 @@ PREFIX wd: <http://www.wikidata.org/entity/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 PREFIX :    <http://example.org/>
 
+start=@:disease
+
 :active_site EXTRA wdt:P31 {
   wdt:P31  [ wd:Q423026 ]      ;
   wdt:P361 @:protein_family * ;
