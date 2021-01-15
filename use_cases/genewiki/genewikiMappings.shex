@@ -1,0 +1,193 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX :    <http://example.org/>
+
+# This ShEx schema contains the mappings from some properties in Wikidata to the equvalent properties in schema.org
+# The mapping has been done manually taking into account the queries from: https://github.com/ingmrb/WikidataSubsetting/tree/main/Public%20queries%20method/SPARQL%20queries/Schemas
+
+start=@:disease
+
+:active_site {
+  wdt:P31  [ wd:Q423026 ]     ;
+  wdt:P361 @:protein_family * ;
+}
+
+:anatomical_structure {
+ a [ schema:AnatomicalStructure ]             ;
+ schema:partOfSystem @:anatomical_structure * ;
+ schema:subStructure @:anatomical_structure * 
+}
+
+:binding_site EXTRA wdt:P31 {
+  wdt:P31  [ wd:Q616005 ] ;
+  wdt:P361 @:protein_family *
+}
+
+:biological_pathway EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q4915012 ] ;
+  wdt:P361 @:biological_pathway * ; 
+  wdt:P361 @:gene * ; 
+  wdt:P527 @:biological_pathway * ;
+  wdt:P527 @:gene * ; 
+#  wdt:P31 ?biological_process ?
+}
+
+:biological_process EXTRA wdt:P31 {
+ wdt:P31  [ wd:Q2996394 ]        ;
+ wdt:P361 @:biological_process * ;
+ wdt:P527 @:biological_process * ;
+ wdt:P128 @:molecular_function * 
+}
+
+:cellular_component EXTRA wdt:P31 {
+  wdt:P31  [ wd:Q5058355 ]       ;
+  wdt:P361 . * ;
+  wdt:P527 . *
+}
+
+:chemical_compound  {
+  a  [ schema:ChemicalSubstance ] ;
+  schema:chemicalRole    . ;
+  schema:interactingDrug . ;
+  wdt:P279  @:pharmacologic_action * ; 
+  wdt:P3780 @:pharmaceutical_product * ;
+  schema:associatedDisease . * ;
+  schema:hasBioChemEntityPart .* ;
+  schema:isPartOfBioChemEntity .* ;
+  schema:taxonomicRange .* ;
+  wdt:P3364 . *
+}
+
+:chromosome EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q37748 ]
+}
+
+:disease EXTRA {
+  a [ schema:MedicalCondition ] ;
+  schema:signOrSymptom . * ;
+  wdt:P828 . * ;
+  wdt:P2293 . * ;
+  schema:associatedAnatomy . * ;
+  schema:drug @:drug 
+}
+
+:gene {
+  a                                     [ schema:Gene ] ;
+  schema:taxonomicRange                 @:taxon * ;
+  wdt:P684                              @:gene * ; 
+  schema:isInvolvedInBiologicalProcess  @:biological_process ;
+  schema:encodesBioChemEntity           @:protein * ;
+  schema:hasBioChemEntityPart           @:biological_pathway *;
+  wdt:P1057                             @:chromosome ;
+}
+ 
+:mechanism_of_action EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q3271540 ] # TODO: Take into account subClassOf also ?
+}
+
+# In the query it appears as medication
+:drug {
+  a [ schema:Drug ] ;
+  wdt:P2175 @:disease * ;
+  schema:activeIngredient @:pharmaceutical_product * ;
+  wdt:P527                @:medication * ;
+  wdt:P361                @:biological_pathway * ;
+  schema:interactingDrug  @:pharmacologic_action * ;
+  schema:interactingDrug  @:chemical_compound * ;
+  schema:interactingDrug  @:therapeutic_use * ;
+  schema:potentialAction  @:pharmacologic_action * ;
+  schema:potentialAction  @:therapeutic_use * ;
+  wdt:P279                @:pharmacologic_action * ;
+  wdt:P279                @:therapeutic_use * ;
+}
+
+:molecular_function {
+ wdt:P31  [ wd:Q14860489 ] ;
+ wdt:P361 . *  ;
+ wdt:P527 . * 
+}
+
+:pharmaceutical_product {
+ wdt:P31 [ wd:Q28885102 ] ;
+  schema:activeIngredient @:therapeutic_use * ;
+  schema:activeIngredient @:pharmacologic_action * ;
+  schema:activeIngredient @:chemical_compound * ;
+  schema:MedicalCondition @:disease *
+}
+
+:pharmacologic_action {
+  wdt:P31 [wd:Q50377224 ] ;
+  wdt:P3780 @:pharmaceutical_product * ;
+  wdt:P2175 @:disease *
+}
+
+:protein_domain {
+  wdt:P31  [ wd:Q898273 ] ;
+  wdt:P527 @:protein_domain * ;
+  wdt:P361 @:protein_domain * ; 
+}
+
+:protein_family {
+  wdt:P31  [ wd:Q417841 ] ;
+  wdt:P527 @:protein * ;
+}
+
+
+# Proteins appear in 9 SPARQL queries in a folder...we took the last one
+:protein EXTRA {
+ a                         [ schema:Protein ] ? ; # This one is commented in some of the SPARQL queries...
+ schema:bioChemInteraction . * ;
+ schema:isEncodedByBioChemEntity . * ;
+ schema:isPartOfBioChemEntity . * ;
+ schema:hasBioChemEntityPart . * ;
+ schema:hasMolecularFunction . * ;
+ schema:isInvolvedInBiologicalProcess . * ;
+ schema:taxonomicRange . * ;
+ schema:isLocatedInSubcellularLocation . * ;
+ schema:bioChemInteraction . * ;
+ wdt:P352 .* ;
+ schema:sameAs . * ;
+}
+
+:ribosomal_RNA {
+  wdt:P31  [ wd:Q28885102 ] ;
+  wdt:P703 @:taxon *
+}
+
+:sequence_variant EXTRA wdt:P31 {
+  wdt:P31   [ wd:Q15304597 ] ;
+  wdt:P3355  @:chemical_compound * ; 
+  wdt:P3354 @:chemical_compound * ; 
+  wdt:P3354 @:medication * ; 
+  wdt:P3355 @:chemical_compound * ;
+  wdt:P3355 @:medication * ;
+  wdt:P3433 @:gene * ;
+  wdt:P1057 @:chromosome * ;
+}
+
+:structural_motif EXTRA wdt:P31 { 
+  wdt:P31  [ wd:Q3273544 ] 
+}
+
+:supersecondary_structure EXTRA wdt:P31 {
+  wdt:P31 [ wd:Q7644128 ] ;
+  wdt:P361 . * 
+}
+
+:symptom {
+  a [  schema:MedicalSignOrSymptom ]
+}
+
+# TODO: I removed the type/subclassOf* by now
+:taxon  {
+  a         [ schema:Taxon ] ; 
+  wdt:P1542 . * # ?has_effect.
+}
+
+:therapeutic_use  {
+  wdt:P31                 [ wd:Q50379781 ] ;
+  schema:Drug             @:pharmaceutical_product * ;
+  schema:relatedCondition @:disease *
+}

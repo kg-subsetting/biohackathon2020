@@ -1,0 +1,27 @@
+PREFIX schema: <https://schema.org/> 
+PREFIX bio: <https://bioschemas.org/> 
+PREFIX wikibase: <http://wikiba.se/ontology#>
+
+<active_site> {
+ wdt:P31  [ wd:Q423026 ] ;
+ wdt:P361 ?part_of 
+}
+
+<anatomical_structure> {
+ wdt:P31  [ wd:Q4936952 ] ;
+ wdt:P361 ?part_of ;
+ wdt:P527 ?has_part
+}
+
+<binding_site> {
+ wdt:P31  [ wd:Q616005 ] ;
+ wdt:P361 ?part_of
+}
+
+<biological_pathway> {
+ wdt:P31 [ wd:Q4915012 ] ;
+ wdt:P361 ?part_of ;
+ wdt:P527 ?has_part ;
+ wdt:P31 ?biological_process
+}
+
