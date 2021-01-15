@@ -3,6 +3,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX wd: <http://www.wikidata.org/entity/>
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 PREFIX :    <http://example.org/>
+prefix schema: <http://schema.org/>
 
 # This ShEx schema contains the mappings from some properties in Wikidata to the equvalent properties in schema.org
 # The mapping has been done manually taking into account the queries from: https://github.com/ingmrb/WikidataSubsetting/tree/main/Public%20queries%20method/SPARQL%20queries/Schemas
@@ -60,7 +61,7 @@ start=@:disease
   wdt:P3364 . *
 }
 
-:chromosome EXTRA wdt:P31 {
+:chromosome {
   wdt:P31 [ wd:Q37748 ]
 }
 
