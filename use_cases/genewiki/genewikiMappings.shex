@@ -10,7 +10,7 @@ prefix schema: <http://schema.org/>
 
 start=@:disease
 
-:active_site {
+:active_site EXTRA wdt:P31 {
   wdt:P31  [ wd:Q423026 ]     ;
   wdt:P361 @:protein_family * ;
 }

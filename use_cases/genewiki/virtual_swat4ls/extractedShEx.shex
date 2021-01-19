@@ -1,0 +1,240 @@
+PREFIX schema: <http://schema.org/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX p: <http://www.wikidata.org/prop/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX : <http://weso.es/shapes/>
+
+:DefinedTerm
+{
+   schema:termCode  xsd:string  ;
+   schema:inDefinedTermSet  @:DefinedTermSet  ;
+   rdf:type  [schema:DefinedTerm]  ;
+   schema:url  @:DefinedTerm  ;
+   schema:name  xsd:string  
+}
+
+
+:Protein
+{
+   rdf:type  [schema:Protein]  ;
+   schema:taxonomicRange  IRI  ?;
+   wdt:P31  IRI  *;
+   schema:isPartOfBioChemEntity  IRI  *;
+   wdt:P361  IRI  *;
+   schema:sameAs  IRI  *;
+   wdt:P527  IRI  *;
+   schema:hasBioChemEntityPart  IRI  *;
+   rdf:type  [schema:AnatomicalStructure]  ?;
+   rdf:type  [schema:Drug]  ?;
+   rdf:type  [schema:Gene]  ?;
+   <http://purl.org/dc/terms/conformsTo>  IRI  ?;
+   schema:identifier  xsd:string  ?;
+   schema:hasRepresentation  xsd:string  ?;
+   schema:hasSequenceAnnotation  IRI  *;
+   schema:name  xsd:string  ?;
+   schema:subStructure  IRI  *;
+   wdt:P684  IRI  *;
+   schema:partOfSystem  IRI  *;
+   schema:potentialAction  IRI  *;
+   schema:activeIngredient  IRI  *;
+   schema:hasMolecularFunction  IRI  *;
+   wdt:P2175  IRI  *;
+   wdt:P279  IRI  ?;
+   schema:isEncodedByBioChemEntity  IRI  ?;
+   schema:bioChemInteraction  IRI  ?;
+   wdt:P352  xsd:string  ?;
+   wdt:P3780  IRI  ?;
+   rdf:type  [schema:ChemicalSubstance]  ?;
+   schema:isInvolvedInBiologicalProcess  IRI  *;
+   schema:isLocatedInSubcellularLocation  IRI  *;
+   schema:chemicalRole  IRI  ?
+}
+
+
+:ScholarlyArticle
+{
+   schema:url  @:ScholarlyArticle  ;
+   schema:sameAs  IRI  {2};
+   rdf:type  [schema:ScholarlyArticle]  ;
+   schema:name  xsd:string  
+}
+
+
+:Organization
+{
+   rdf:type  [schema:Organization]  ;
+   schema:name  xsd:string  ;
+   schema:url  IRI  
+}
+
+
+:Dataset
+{
+   rdf:type  [schema:Dataset]  ;
+   schema:keywords  xsd:string  *;
+   schema:license  @:CreativeWork  ?;
+   schema:name  xsd:string  ?;
+   schema:identifier  IRI  ?;
+   schema:url  @:DataCatalog  ?;
+   schema:includedInDataCatalog  @:DataCatalog  ?;
+   schema:creator  @:Organization  ?;
+   schema:description  xsd:string  ?;
+   schema:version  xsd:string  ?
+}
+
+
+:DefinedTermSet
+{
+   schema:name  xsd:string  ;
+   rdf:type  [schema:DefinedTermSet]  
+}
+
+
+:DataCatalog
+{
+   schema:license  @:CreativeWork  ;
+   schema:datePublished  xsd:string  ;
+   rdf:type  [schema:DataCatalog]  ;
+   schema:provider  xsd:string  {3};
+   schema:citation  @:ScholarlyArticle  ;
+   schema:name  xsd:string  ;
+   schema:dateModified  xsd:string  ;
+   schema:url  @:DataCatalog  ;
+   schema:encodingFormat  xsd:string  ;
+   schema:keywords  xsd:string  {6};
+   schema:identifier  IRI  ;
+   schema:dataset  @:Dataset  ;
+   schema:sourceOrganization  @:Organization  ;
+   schema:description  xsd:string  
+}
+
+
+:CreativeWork
+{
+   rdf:type  [schema:CreativeWork]  ;
+   schema:name  xsd:string  ?;
+   schema:url  IRI  ?
+}
+
+
+:Taxon
+{
+   rdf:type  [schema:Taxon]  
+}
+
+
+:AnatomicalStructure
+{
+   rdf:type  [schema:AnatomicalStructure]  ;
+   rdf:type  [schema:Protein]  ?;
+   wdt:P31  IRI  *;
+   schema:subStructure  IRI  *;
+   wdt:P527  IRI  *;
+   schema:hasBioChemEntityPart  IRI  *;
+   schema:partOfSystem  IRI  *;
+   schema:isPartOfBioChemEntity  IRI  *;
+   schema:taxonomicRange  IRI  ?;
+   wdt:P361  IRI  *;
+   rdf:type  [schema:Drug]  ?;
+   rdf:type  [schema:MedicalSignOrSymptom]  ?;
+   schema:activeIngredient  IRI  *;
+   wdt:P2175  IRI  ?
+}
+
+
+:ChemicalSubstance
+{
+   rdf:type  [schema:ChemicalSubstance]  ;
+   schema:bioChemInteraction  IRI  *;
+   schema:hasBioChemEntityPart  IRI  *;
+   schema:chemicalRole  IRI  *;
+   schema:isPartOfBioChemEntity  IRI  *;
+   wdt:P31  IRI  ?;
+   rdf:type  [schema:Drug]  ?;
+   wdt:P527  IRI  *;
+   wdt:P361  IRI  *;
+   schema:potentialAction  IRI  *;
+   wdt:P279  IRI  *;
+   schema:taxonomicRange  IRI  ?;
+   wdt:P3364  IRI  ?;
+   wdt:P3780  IRI  *;
+   schema:activeIngredient  IRI  *;
+   schema:associatedDisease  IRI  *;
+   wdt:P2175  IRI  *;
+   rdf:type  [schema:Protein]  ?;
+   schema:isInvolvedInBiologicalProcess  IRI  *;
+   schema:sameAs  IRI  ?;
+   schema:hasMolecularFunction  IRI  *;
+   schema:isLocatedInSubcellularLocation  IRI  *;
+   schema:isEncodedByBioChemEntity  IRI  ?;
+   wdt:P352  xsd:string  ?
+}
+
+
+:MedicalCondition
+{
+   wdt:P31  IRI  ?;
+   rdf:type  [schema:MedicalCondition]  ?;
+   rdf:type  [schema:MedicalSignOrSymptom]  ?;
+   wdt:P2293  IRI  *;
+   wdt:P828  IRI  *;
+   schema:drug  IRI  ?;
+   schema:signOrSymptom  IRI  *
+}
+
+
+:Gene
+{
+   rdf:type  [schema:Gene]  ;
+   rdf:type  [schema:Protein]  ;
+   schema:taxonomicRange  IRI  ;
+   wdt:P684  IRI  *;
+   schema:hasMolecularFunction  IRI  *
+}
+
+
+:Drug
+{
+   rdf:type  [schema:Drug]  ;
+   wdt:P31  IRI  +;
+   rdf:type  [schema:Protein]  ?;
+   schema:potentialAction  IRI  *;
+   schema:activeIngredient  IRI  *;
+   schema:bioChemInteraction  IRI  *;
+   rdf:type  [schema:ChemicalSubstance]  ?;
+   wdt:P2175  IRI  *;
+   wdt:P361  IRI  *;
+   schema:isPartOfBioChemEntity  IRI  *;
+   wdt:P527  IRI  *;
+   schema:hasBioChemEntityPart  IRI  *;
+   schema:chemicalRole  IRI  *;
+   wdt:P3780  IRI  *;
+   schema:taxonomicRange  IRI  ?;
+   wdt:P279  IRI  ?;
+   schema:associatedDisease  IRI  *;
+   wdt:P3364  IRI  ?;
+   schema:isEncodedByBioChemEntity  IRI  ?;
+   wdt:P352  xsd:string  ?;
+   schema:sameAs  IRI  ?;
+   rdf:type  [schema:AnatomicalStructure]  ?;
+   schema:subStructure  IRI  *;
+   schema:isInvolvedInBiologicalProcess  IRI  *;
+   schema:hasMolecularFunction  IRI  *;
+   schema:isLocatedInSubcellularLocation  IRI  *
+}
+
+
+:MedicalSignOrSymptom
+{
+   wdt:P31  IRI  ?;
+   rdf:type  [schema:MedicalSignOrSymptom]  ?;
+   rdf:type  [schema:MedicalCondition]  ?;
+   wdt:P2293  IRI  *;
+   wdt:P828  IRI  *;
+   schema:drug  IRI  ?;
+   rdf:type  [schema:AnatomicalStructure]  ?;
+   schema:signOrSymptom  IRI  *
+}
+
