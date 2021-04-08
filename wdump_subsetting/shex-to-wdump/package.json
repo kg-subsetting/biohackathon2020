@@ -1,0 +1,21 @@
+{
+  "name": "shex-to-wdump",
+  "version": "0.0.1",
+  "description": "",
+  "bin": {
+    "shex-to-wdump": "./cli.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@shexjs/node": "file:../../../../shexSpec/shex.js/packages/shex-node",
+    "@shexjs/parser": "^1.0.0-alpha.10",
+    "command-line-args": "^5.1.1",
+    "command-line-usage": "^6.1.1"
+  }
+}

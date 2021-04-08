@@ -63,6 +63,7 @@ start=@:disease
 }
 
 :gene EXTRA wdt:P31 {
+  wdt:P31   [ wd:Q7187 ] ;
   wdt:P703  @:taxon * ;
   wdt:P684  @:gene * ; 
   wdt:P682  @:biological_process ;
