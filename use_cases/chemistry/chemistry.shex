@@ -1,0 +1,39 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wd:   <http://www.wikidata.org/entity/>
+PREFIX wdt:  <http://www.wikidata.org/prop/direct/>
+prefix :     <http://example.org/>
+import ....
+
+
+:chemicalsOrSubClassOf {
+    wdt:P31 
+}
+
+# wdt:P279 = rdfs:subClassOf
+# wdt:P31 = rdf:type
+# wdt:P527 = has part
+# wd:Q11173 = Chemical Compound
+
+:chemical {
+  # discriminator wdt:P31/wdt:P279* [ wd:Q11173 ]
+
+  ^wdt:P527 @:biological_process *
+   
+#    p:P31 { ps:P31 [ wd:Q11173 ] }
+}
+
+
+:biological_process EXTRA wdt:P527 {
+  wdt:P527  @:chemical OR .      * ; 
+  ^wdt:P527 @:biological_pathway *  
+}
+
+:biological_pathway {
+  wdt:P527 @:biological_process  
+}
+
+
+:medication {
+  
+}
